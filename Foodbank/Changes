@@ -1,0 +1,32 @@
+****10:30PM March 22, 2017 - Gideon Richter****
+
+Changed .loginWrapper class to 280px height
+
+Added .password class to css 
+Changed password on Admin login to be type="text" with password class
+
+Added Calendar, Reports, Timeclock List to Home
+
+Removed #loginBox from CSS, also removed from relevant pages
+	Foodbank/login
+	Foodbank/Admin/login_submit
+	Foodbank/Admin/loginRequired.php
+	Foodbank/Admin/logout
+	Foodbank/Admin/php/addUser.php
+	Foodbank/Admin/php/addUser_submit.php
+
+Added class .container to first div inside .loginWrapper divs
+	Foodbank/login
+	Foodbank/Admin/login_submit
+	Foodbank/Admin/loginRequired.php
+	Foodbank/Admin/logout
+	Foodbank/Admin/php/addUser.php
+	Foodbank/Admin/php/addUser_submit.php
+
+Commented out Timeclock/index.php and changed it to the Login Style, all old code is still there. 
+
+Added select2() jQuery Box to TimeClock with 190px width
+
+Added a bunch of XML entries in the process ^
+
+--> If you have not made any changes to your files yet, you should be able to download all of these changes off of GitHub
