@@ -29,4 +29,6 @@ Added select2() jQuery Box to TimeClock with 190px width
 
 Added a bunch of XML entries in the process ^
 
+Moved the if(sessionVar is set) {header: }; below the CSS call in Foodbank/login.php
+
 --> If you have not made any changes to your files yet, you should be able to download all of these changes off of GitHub

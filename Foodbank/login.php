@@ -1,8 +1,5 @@
 <?php 
 session_start(); 
-if(isset($_SESSION['user_id'])) {
-	die("<div id='loginBox' class='container centerAlign'>You are already logged in, do you want to <a href='/Foodbank/Admin/logout.php'>Log Out?</a>");
-} 
 ?>
 
 <html>
@@ -10,6 +7,13 @@ if(isset($_SESSION['user_id'])) {
 	<title>Admin Login</title>
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
+</html>
+
+<?php
+if(isset($_SESSION['user_id'])) {
+	die("<div class='Loginwrapper container centerAlign'>You are already logged in, do you want to <a href='/Foodbank/Admin/logout.php'>Log Out?</a>");
+} 
+?>
 
 <body class="Loginwrapper">
 <div class="centerAlign container">
