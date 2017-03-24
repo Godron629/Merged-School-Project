@@ -32,3 +32,22 @@ Added a bunch of XML entries in the process ^
 Moved the if(sessionVar is set) {header: }; below the CSS call in Foodbank/login.php
 
 --> If you have not made any changes to your files yet, you should be able to download all of these changes off of GitHub
+
+
+****10:6PM March 22, 2017 - Gideon Richter****
+
+Changed 'username' to 'Username...' on select box - TimeClock/index.php
+
+Added password column to Volunteer in database
+
+Delete createNewVolunteer.php
+Delete databaseClass.php
+
+-->databasePHPFunctions.php should be deleted because it was renamed to databaseFunctions.php but some files have mixed filenames... so just leave it for now
+
+Add makePassword() to Foodbank/code/php/newVolunteer_submit.php to generate password (First inital, last initial, year of birth 'gr1990')
+
+Add dialog div at bottom of /Foodbank/TimeClock/index.php
+Add dialog declaration to /Foodbank/code/javascript/TimeClock.js
+
+Change include to include_once for /Foodbank/code/php/selectPopulate.php;

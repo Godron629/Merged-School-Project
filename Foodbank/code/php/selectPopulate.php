@@ -1,6 +1,6 @@
 <?php
     function popSelect() {
-        include $_SERVER['DOCUMENT_ROOT'] . "/Foodbank/code/php/databasePHPFunctions.php";
+        include_once $_SERVER['DOCUMENT_ROOT'] . "/Foodbank/code/php/databasePHPFunctions.php";
         $connection = db_connect();
         $date = date("Y-m-d");
 

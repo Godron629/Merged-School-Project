@@ -1,10 +1,5 @@
 <?php
 
-/*
-* Gideon Richter 2/22/2017
-* These functions allow a programmer to interact with a mysql database
-*/
-
 function db_connect() {
 	static $connection;
 
@@ -22,6 +17,7 @@ function db_connect() {
 	return $connection;
 }
 
+//Returns true or false depending on success
 function db_query($query) {
 	$connection = db_connect();
 	$result = $connection->query($query);
@@ -55,6 +51,7 @@ function db_error() {
 	return $connection->error;
 }
 
+//For quoting and escaping user input
 function db_quote($value) {
 	$connection = db_connect();
 	return "'" . $connection->real_escape_string($value) . "'";

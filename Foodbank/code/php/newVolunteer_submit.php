@@ -72,7 +72,10 @@ function makeVolunteerRow() {
 	//Volunteers are active by default
 	$volunteerStatus = true;
 
-	db_query("INSERT INTO volunteer (volunteer_fname, volunteer_lname, volunteer_email, volunteer_birthdate, volunteer_gender, volunteer_street, volunteer_city, volunteer_province, volunteer_postcode, volunteer_primaryphone, volunteer_secondaryphone, volunteer_status) VALUES ($firstName, $lastName, $email, $birthdate, $gender, $address, $city, $province, $postalCode, $primaryPhone, $secondaryPhone, $volunteerStatus)");
+	//Generate volunteer timeclock password sha1
+	$password = makePassword();
+
+	db_query("INSERT INTO volunteer (volunteer_fname, volunteer_lname, volunteer_email, volunteer_birthdate, volunteer_gender, volunteer_street, volunteer_city, volunteer_province, volunteer_postcode, volunteer_primaryphone, volunteer_secondaryphone, volunteer_status, password) VALUES ($firstName, $lastName, $email, $birthdate, $gender, $address, $city, $province, $postalCode, $primaryPhone, $secondaryPhone, $volunteerStatus, $password)");
 
 	return newRowId($connection);
 }
@@ -193,6 +196,16 @@ function joinVolunteerAndEmergencyContact($volunteerId, $emergencyContactId) {
 	db_query("INSERT INTO jnct_volunteer_emergency_contact (volunteer_fk, emergency_contact_fk, relationship, phone) VALUES ({$volunteerId}, {$emergencyContactId}, {$relationship}, {$phone})");
 
 	return newRowId($connection);
+}
+
+function makePassword() {
+	$firstInitial = strtolower($_POST['volunteerFirstName'][0]);
+	$lastInitial = strtolower($_POST['volunteerLastName'][0]);
+	$year = date('Y', strtotime($_POST['volunteerDOB']));
+
+	$password = $firstInitial . $lastInitial . $year;
+
+	return db_quote(sha1($password));
 }
 
 ?>

@@ -21,5 +21,16 @@ $(document).ready(function() {
         }
     });
 
+  $("#wrongPasswordDialog").dialog({
+        autoOpen: false,
+        draggable: false,
+        title: "Login Failed",
+        buttons: {
+         'Ok' : function() {
+          $(this).dialog("close");
+         }
+        }
+    });
+
     $("#user").select2();
 });
