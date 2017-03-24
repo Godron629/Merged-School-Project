@@ -7,7 +7,7 @@
         ],
         "settings": {
             "xdebug": {
-                "url": "http://localhost:8080/Foodbank/Admin/home.php"
+                "url": "http://localhost:8080/Foodbank/"
             }
         }
     }

@@ -289,11 +289,3 @@ a.loginButton {
 	height: 743px;
 	border: solid;
 }
-
-
-
-/*Added March 22 */
-
-.password{
-    -webkit-text-security: disc;
-}

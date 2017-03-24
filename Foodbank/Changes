@@ -51,3 +51,14 @@ Add dialog div at bottom of /Foodbank/TimeClock/index.php
 Add dialog declaration to /Foodbank/code/javascript/TimeClock.js
 
 Change include to include_once for /Foodbank/code/php/selectPopulate.php;
+
+
+
+
+****9:01AM March 24 2017 - Gideon Richter ****
+Unindented Timclock if block because it messed up the XML formatting
+
+Removed password class and changed password fields to type='password'
+	/Foodbank/TimeClock/index.php
+	/Foodbank/login.php
+	/Foodbank/css/stylesheet.css
