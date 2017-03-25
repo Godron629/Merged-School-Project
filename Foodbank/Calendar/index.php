@@ -336,6 +336,18 @@ td
     overflow: auto;
 }
 
+a.loginButton {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    margin: 10px 10px;
+	padding: 5px 10px;
+
+    text-decoration: none;
+    color: initial;
+}
+
 button
 {
 	margin: 0px 0px 0px 0px;

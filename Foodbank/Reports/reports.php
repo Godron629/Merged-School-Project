@@ -80,8 +80,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 			
 			}break;
 			case "report2":
-			{
-				
+			{				
 				$time = date("H:i:s");
 				$date = date("Y-m-d");
 				$path = "C:/wamp64/www/Foodbank/TimeClock/";
@@ -125,7 +124,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 							$sql2 = "select calendar_dept, calendar_shift from calendar_entry where volunteer_id='". $content['id'] . "' AND calendar_date='{$date}'";
 							$result2 = $conn->query($sql2);
 							$details = $result2->fetch_assoc();
-							
 							$reportAppend .= $user['volunteer_id'] . ":" . $user['volunteer_fname'] . " " . $user['volunteer_lname'] ."<br>Clocked in at: " . $lineDB . "<br>In Department: " . $details['calendar_dept'] . "<br>for " . $details['calendar_shift'] . " shift.<br><br>";
 							fclose($reading); 
 					}
@@ -180,7 +178,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 						$rowJoin = $resultJoin->fetch_assoc();
 						
 						
-						$reportAppend .= $rowJoin['volunteer_fname'] . " " . $rowJoin['volunteer_lname'] ."<br>" . $row['calendar_dept'] . "<br> " . $row['calendar_shift'] . "<hr><br>";
+						$reportAppend .= $rowJoin['volunteer_fname'] . " " . $rowJoin['volunteer_lname'] ."<br>" . $row['calendar_dept'] . "<br> " . $row['calendar_shift'] .  "<hr><br>";
 					} 
 					
 					$reportAppend .= "</div>";
@@ -195,7 +193,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 					$reportAppend = "";
 					if($_POST['paramInclude'] == "showAll")
 					{
-						$sql = "select clock_hours_worked from clock_entry where volunteer_id='" . $_POST['people'] . "'";
+						$sql = "select clock_hours_worked, clock_day_worked, Notes from clock_entry where volunteer_id='" . $_POST['people'] . "'";
 						$result = $conn->query($sql);
 						$calc = strtotime("00:00:00");
 						$test = "";				
@@ -204,6 +202,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 						{
 							while($row = $result->fetch_assoc())
 							{
+								$reportAppend .= "Date: " . $row['clock_day_worked'] . ", Hours worked on shift: " .  $row['clock_hours_worked'] . ",  Notes: " . $row['Notes']. "<br>";
 								$test += strtotime($row['clock_hours_worked']) - $calc;
 							}
 						}
@@ -229,7 +228,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 							if($_POST['firstDate'] < $_POST['secondDate'])
 							{
 								
-								$sql = "select clock_hours_worked from clock_entry where volunteer_id='" . $_POST['people'] . "' AND clock_day_worked BETWEEN '". $_POST['firstDate'] ."' AND '" . $_POST['secondDate'] . "'";
+								$sql = "select clock_hours_worked, clock_day_worked, Notes from clock_entry where volunteer_id='" . $_POST['people'] . "' AND clock_day_worked BETWEEN '". $_POST['firstDate'] ."' AND '" . $_POST['secondDate'] . "'";
 								$result = $conn->query($sql);
 								$calc = strtotime("00:00:00");
 								$test = "";				
@@ -238,6 +237,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 								{
 									while($row = $result->fetch_assoc())
 									{
+										$reportAppend .= "Date: " . $row['clock_day_worked'] . ", Hours worked on shift: " .  $row['clock_hours_worked'] . ",  Notes: " . $row['Notes']. "<br>";
 										$test += strtotime($row['clock_hours_worked']) - $calc;
 									}
 								}
@@ -515,69 +515,79 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 				$arrayCounter = array();
 				$arrayCounter2 = array();
 				
-				//print_r($_POST);
 				if(isset($_POST['reportType']))
 				{
 					$reportAppend = "";
 					$report;
 					$sqlAvail = "select volunteer_fk from pref_avail where ";
 					$sqlDept = "select volunteer_fk from pref_dept where ";
-					
+					$params = " Search for: <u><b>";
 					
 					if(isset($_POST['am']))
 					{
 						$morning = "am='yes'";
 						array_push($acceptedParams3, $morning);
+						$params .= "am	|  ";
 					}
 					if(isset($_POST['pm']))
 					{
 						$Afternoon = "pm='yes'";
 						array_push($acceptedParams3, $Afternoon);
+						$params .= "pm	|  ";
 					}
 					if(isset($_POST['monday']))
 					{
 						$Monday = "weekday='monday'";
-						array_push($acceptedParams, $Monday);	
+						array_push($acceptedParams, $Monday);
+						$params .= "Monday	|  ";
 					}
 					if(isset($_POST['tuesday']))
 					{
 						$Tuesday = "weekday='tuesday'";
-						array_push($acceptedParams, $Tuesday);	
+						array_push($acceptedParams, $Tuesday);
+						$params .= "Tuesday	|  ";
 					}
 					if(isset($_POST['wednesday']))
 					{
 						$Wednesday = "weekday='wednesday'";
-						array_push($acceptedParams, $Wednesday);	
+						array_push($acceptedParams, $Wednesday);
+						$params .= "Wednesday	|  ";
 					}
 					if(isset($_POST['thursday']))
 					{
 						$Thursday = "weekday='thursday'";
-						array_push($acceptedParams, $Thursday);	
+						array_push($acceptedParams, $Thursday);
+						$params .= "Thursday	|  ";
 					}
 					if(isset($_POST['friday']))
 					{
 						$Friday = "weekday='friday'";
-						array_push($acceptedParams, $Friday);	
+						array_push($acceptedParams, $Friday);
+						$params .= "Friday	|  ";						
 					}					
 					if(isset($_POST['front']))
 					{
 						$front = "department='front' AND allow='yes'";
-						array_push($acceptedParams2, $front);						
+						array_push($acceptedParams2, $front);
+						$params .= "Front	|  ";						
 					}
 					if(isset($_POST['vio']))
 					{
 						$vio = "department='vio' AND allow='yes'";
-						array_push($acceptedParams2, $vio);						
+						array_push($acceptedParams2, $vio);
+						$params .= "Volunteer Intake Coordinator	|  ";						
 					}
 					if(isset($_POST['kitchen']))
 					{
 						$kitchen = "department='kitchen' AND allow='yes'";
-						array_push($acceptedParams2, $kitchen);						
+						array_push($acceptedParams2, $kitchen);
+						$params .= "Kitchen	|  ";						
 					}
 					if(isset($_POST['warehouse']))
 					{
 						$warehouse = "department='warehouse' AND allow='yes'";
-						array_push($acceptedParams2, $warehouse);						
+						array_push($acceptedParams2, $warehouse);
+						$params .= "Warehouse	|  ";
 					}
 				}
 					if(sizeof($acceptedParams3) == 0 || sizeof($acceptedParams2) == 0 || sizeof($acceptedParams) == 0)
@@ -625,7 +635,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 						}
 					}
 					$holderArray = array_unique($arrayCounter2);
-
+					$reportAppend .= $params . "</b></u><br>";
 					for($i = 0; $i < sizeof($arrayCounter2); $i++)
 					{
 						if(isset($holderArray[$i]))

@@ -1,5 +1,5 @@
 <?php 
-include $_SERVER['DOCUMENT_ROOT'] . "/Foodbank/code/php/databaseFunctions.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/Foodbank/code/php/databasePHPFunctions.php";
 include $_SERVER['DOCUMENT_ROOT'] . "/Foodbank/code/php/formValidation.php";
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -7,9 +7,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 function createVolunteer() {
-	if(volunteerExists()) {
+/*	if(volunteerExists()) {
 		die("Error: Volunteer already exists");
-	} 
+	} */
 
 	//If successful, makeVolunteerRow returns new row Id, making this true
 	if ($volunteerId = makeVolunteerRow()) {
@@ -71,10 +71,8 @@ function makeVolunteerRow() {
 
 	//Volunteers are active by default
 	$volunteerStatus = true;
-	//Generate volunteer timeclock password sha1
-	$password = makePassword();
 
-	db_query("INSERT INTO volunteer (volunteer_fname, volunteer_lname, volunteer_email, volunteer_birthdate, volunteer_gender, volunteer_street, volunteer_city, volunteer_province, volunteer_postcode, volunteer_primaryphone, volunteer_secondaryphone, volunteer_status, password) VALUES ($firstName, $lastName, $email, $birthdate, $gender, $address, $city, $province, $postalCode, $primaryPhone, $secondaryPhone, $volunteerStatus, $password)");
+	db_query("INSERT INTO volunteer (volunteer_fname, volunteer_lname, volunteer_email, volunteer_birthdate, volunteer_gender, volunteer_street, volunteer_city, volunteer_province, volunteer_postcode, volunteer_primaryphone, volunteer_secondaryphone, volunteer_status) VALUES ($firstName, $lastName, $email, $birthdate, $gender, $address, $city, $province, $postalCode, $primaryPhone, $secondaryPhone, $volunteerStatus)");
 
 	return newRowId($connection);
 }
@@ -195,17 +193,6 @@ function joinVolunteerAndEmergencyContact($volunteerId, $emergencyContactId) {
 	db_query("INSERT INTO jnct_volunteer_emergency_contact (volunteer_fk, emergency_contact_fk, relationship, phone) VALUES ({$volunteerId}, {$emergencyContactId}, {$relationship}, {$phone})");
 
 	return newRowId($connection);
-}
-
-function makePassword() {
-	$firstInitial = strtolower($_POST['volunteerFirstName'][0]);
-	$lastInitial = strtolower($_POST['volunteerLastName'][0]);
-	$year = date('Y', strtotime($_POST['volunteerDOB']));
-
-	$password = $firstInitial . $lastInitial . $year;
-	
-	return db_quote(sha1($password));
-	//return "'{$password}'";
 }
 
 ?>

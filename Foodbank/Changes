@@ -55,10 +55,19 @@ Change include to include_once for /Foodbank/code/php/selectPopulate.php;
 
 
 
-****9:01AM March 24 2017 - Gideon Richter ****
-Unindented Timclock if block because it messed up the XML formatting
+**** 3/24/2017 Setting up school VPN  - Gideon Richter ****
+Replaced loginBox id with loginWrapper for Already Logged In Page
 
-Removed password class and changed password fields to type='password'
-	/Foodbank/TimeClock/index.php
-	/Foodbank/login.php
-	/Foodbank/css/stylesheet.css
+Created setup instructions
+
+Changed login passwords from type='text' to type='password'
+
+Added .loginButton to 'Logout' to included CSS for Calendar/index.php
+
+!!!!CLOCK-OUT PRODUCES A BUNCH OF DEBUGGING CODE!!!
+
+Change table engine for calendar_entry, clock_entry, users so that relationships can be added
+
+Added indexing to calendar_entry, clock_entry 
+
+Added foreign key relationships between volunteer and calendar_entry, clock_entry
