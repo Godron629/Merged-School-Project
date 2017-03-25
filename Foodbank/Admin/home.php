@@ -31,7 +31,6 @@ if($result = db_select($sql)) {
 
 	<h1><a href="home.php"><img id="logo" src="/Foodbank/images/logo.gif"></a><a href="home.php">Home</h1></a>
 	<div id="topRightNav">
-	<a href="/Foodbank/TimeClock/index.php">Time Clock</a>
 		<a href="logout.php" class="loginButton">Logout</a>
 	</div>
 
