@@ -76,6 +76,7 @@ if($result = db_select($sql)) {
 				<ul>
 					<li><a href="/Foodbank/Volunteer/newVolunteer.php">New Volunteer</a></li>
 					<li><a href="/Foodbank/Volunteer/updateVolunteer.php">Update Volunteer</a></li>
+					<li><a href="/Foodbank/Volunteer/UpdateVolunteerTime.php">Update Time Records</a></li>
 				</ul>
 			</li>
 			<li><a href="/Foodbank/Reports/reports.php">Reports</a></li>			
