@@ -62,7 +62,7 @@ if($result = db_select($sql)) {
 			<li>Admin Functions
 				<ul>
 					<li><a href="/Foodbank/login.php">Admin Login</a></li>
-					<li><a href="php/addUser.php">Add Admin User</a></li>
+					<li><a href="/Foodbank/Admin/addUser.php">Add Admin User</a></li>
 					<li><a href="logout.php">Logout</a></li>
 				</ul>
 			</li>
