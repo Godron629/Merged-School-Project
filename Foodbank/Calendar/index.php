@@ -77,7 +77,6 @@ function changeCal(buttonName)
 		<a href="/Foodbank/Calendar/">Calendar
 	</h1></a>
 	<div id="topRightNav">
-	<a href="/Foodbank/TimeClock/index.php">Time Clock</a>
 		<a href="/Foodbank/Admin/logout.php" class="loginButton">Logout</a>
 	</div>
 

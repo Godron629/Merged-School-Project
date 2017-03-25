@@ -822,7 +822,6 @@ function populateList(str) {
 	<form id="selectReport" action="" method="POST">
 		<h1><a href="/Foodbank/Admin/home.php"><img id="logo" src="/Foodbank/images/logo.gif"></a><a href="reports.php">Reports</h1></a>
 	<div id="topRightNav">
-	<a href="/Foodbank/TimeClock/index.php">Time Clock</a>
 		<a href="/Foodbank/Admin/logout.php" class="loginButton">Logout</a>
 	</div>
 

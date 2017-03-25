@@ -213,7 +213,6 @@ function unLockNotes(id)
 
 	<h1><a href="/Foodbank/Admin/home.php"><img id="logo" src="/Foodbank/images/logo.gif"></a><a href="/Foodbank/Volunteer/UpdateVolunteerTime.php">Update Volunteer Time Records</h1></a>
 	<div id="topRightNav">
-	<a href="/Foodbank/TimeClock/index.php">Time Clock</a>
 		<a href="/Foodbank/Admin/logout.php" class="loginButton">Logout</a>
 	</div>
 

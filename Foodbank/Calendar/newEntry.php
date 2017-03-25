@@ -71,10 +71,6 @@ function changeMonth(month, buttonName) {
 		</a>
 		<a href="/Foodbank/Calendar/">Calendar
 	</a> > New Entry</h1>
-	<div id="topRightNav">
-	<a href="/Foodbank/TimeClock/index.php">Time Clock</a>
-		<a href="/Foodbank/Admin/logout.php" class="loginButton">Logout</a>
-	</div>
 
 	<div id="mainNav">
 		<ul>
