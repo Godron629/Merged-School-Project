@@ -77,7 +77,7 @@ Added foreign key relationships between volunteer and calendar_entry, clock_entr
 
 Moved addUser.php from /Foodbank/Admin/php to /Foodbank/Admin
 Moved addUser_submit.php from /Foodbank/Admin/php to /Foodbank/Admin
-Deleted /Foodbank/Admin/php - Not necessary, overly confusing
+Deleted /Foodbank/Admin/php 
 
 Moved login_submit.php from /Foodbank/Admin to /Foodbank
 
