@@ -42,7 +42,7 @@ if($result = db_select($sql)) {
 			<li>
 				<a>Manage Volunteers</a>
 				<ul class="dropdown">
-					<li><a href="/Foodbank/Volunteer/newVolunteer.php">New Volunteer</a></li>
+					<li><a href="/Foodbank/Volunteer/New Volunteer/newVolunteer.php">New Volunteer</a></li>
 					<li><a href="/Foodbank/Volunteer/updateVolunteer.php">Update Volunteer</a></li>
 					<li><a href="/Foodbank/Volunteer/UpdateVolunteerTime.php">Update Time Entries</a></li>
 				</ul>
@@ -74,7 +74,7 @@ if($result = db_select($sql)) {
 			</li>			
 			<li>Manage Volunteers 
 				<ul>
-					<li><a href="/Foodbank/Volunteer/newVolunteer.php">New Volunteer</a></li>
+					<li><a href="/Foodbank/Volunteer/New Volunteer/newVolunteer.php">New Volunteer</a></li>
 					<li><a href="/Foodbank/Volunteer/updateVolunteer.php">Update Volunteer</a></li>
 				</ul>
 			</li>
