@@ -96,4 +96,5 @@ Moved /Foodbank/code/javascript/loadVolunteer.js to /Foodbank/Volunteer/javascri
 Moved /Foodbank/code/javascript/newVolunteer.js to /Foodbank/Volunteer/javascript
 Moved /Foodbank/code/javascript/updateVolunteer.js to /Foodbank/Volunteer/javascript
 
+Added TimeClock Admin password to be 'admin@123'
 
