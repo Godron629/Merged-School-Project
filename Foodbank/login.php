@@ -19,7 +19,7 @@ if(isset($_SESSION['user_id'])) {
 		<a href="/Foodbank/TimeClock/index.php">Time Clock</a>
 	</div>
 
-	<a href="/Foodbank/"><img id="loginLogo" src="images/logo.gif"></a>
+	<a href="/Foodbank/"><img id="loginLogo" src="/Foodbank/images/logo.gif"></a>
 	
 	<h2>Admin Login</h2><br>
 	<form class="loginButtons" action="/Foodbank/login_submit.php" method="post">
