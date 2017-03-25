@@ -1,0 +1,479 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"colum",
+				"columnName"
+			],
+			[
+				"map",
+				"mapFieldToColumn"
+			],
+			[
+				"chang",
+				"changedFields"
+			],
+			[
+				"keysOf",
+				"keysOfChangedFields"
+			],
+			[
+				"chagn",
+				"changedFields"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"eme",
+				"emerContactColumns"
+			],
+			[
+				"key",
+				"keysOfFieldsThatChanged"
+			],
+			[
+				"keys",
+				"keysOfFieldsThatChanged"
+			],
+			[
+				"sea",
+				"serializedForm"
+			],
+			[
+				"or",
+				"origForm"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"loadPre",
+				"loadPreferredAvailIntoFields"
+			],
+			[
+				"remove",
+				"removeAttr"
+			],
+			[
+				"load",
+				"loadPreferredAvailibility"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"block",
+				"blockLabels"
+			],
+			[
+				"bloc",
+				"blockLabels"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"volunteer",
+				"volunteerDOB"
+			],
+			[
+				"emergency_con",
+				"emergency_contact_id"
+			],
+			[
+				"emer",
+				"emergencyContactExists"
+			],
+			[
+				"emergencyCon",
+				"emergencyContactExists"
+			],
+			[
+				"makePref",
+				"makePreferredDepartmentRecord"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"join",
+				"joinVolunteerAndEmergencyContact"
+			],
+			[
+				"make",
+				"makeEmergencyContactRecord"
+			],
+			[
+				"real_escape",
+				"mysql_real_escape_string"
+			],
+			[
+				"emergen",
+				"emergency_contact_fname"
+			],
+			[
+				"redirect",
+				"redirectAfter5Seconds"
+			],
+			[
+				"real_esca",
+				"mysql_real_escape_string"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"list-style",
+				"list-style-type"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "start",
+		"selected_items":
+		[
+			[
+				"start",
+				"Xdebug: Restart Session"
+			],
+			[
+				"stop",
+				"Xdebug: Stop Debugging (Close Windows)"
+			],
+			[
+				"stop de",
+				"Xdebug: Stop Debugging (Close Windows)"
+			],
+			[
+				"restart",
+				"Xdebug: Restart Session"
+			],
+			[
+				"res",
+				"Xdebug: Restart Session"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build With: C++ Single File"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/Foodbank"
+	],
+	"file_history":
+	[
+		"/C/wamp64/www/javascript/updateVolunteer.js",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/C/wamp64/logs/mysql.log",
+		"/C/wamp64/logs/php_error.log",
+		"/C/wamp64/www/php/databasePHPFunctions.php",
+		"/C/wamp64/www/php/test.php",
+		"/C/wamp64/www/foodbank.sublime-project",
+		"/C/wamp64/www/javascript/databaseColumnNames.json",
+		"/C/wamp64/www/javascript/loadVolunteer.js",
+		"/C/wamp64/bin/apache/apache2.4.23/bin/php.ini",
+		"/C/wamp64/www/index2.php",
+		"/C/wamp64/www/php/updateVolunteer.php",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/C/wamp64/www/css/stylesheet.css",
+		"/C/Users/Gideon/Desktop/index.js",
+		"/C/wamp64/www/php/test.js",
+		"/C/wamp64/www/php/testphp.php",
+		"/C/wamp64/www/php/loadUpdateFields.php",
+		"/C/wamp64/www/index.php",
+		"/C/wamp64/www/php/createNewVolunteer.php",
+		"/C/wamp64/www/php/test.html",
+		"/C/wamp64/www/php/testjs.js",
+		"/C/Users/Gideon/Desktop/temp/loadFieldsFromDatabase.php",
+		"/C/wamp64/www/myPHPFiles/createNewVolunteer.php",
+		"/C/wamp64/www/myPHPFiles/test.php",
+		"/C/wamp64/www/myPHPFiles/databasePHPFunctions.php",
+		"/C/wamp64/www/myPHPFiles/updateVolunteer.php",
+		"/C/wamp64/www/updateVolunteer.php",
+		"/C/wamp64/www/updateVolunteer.js",
+		"/C/wamp64/www/myPHPFiles/databaseClass.php",
+		"/C/wamp64/www/myPHPFiles/volunteerClass.php",
+		"/C/wamp64/www/myPHPFiles/postClass.php",
+		"/C/wamp64/www/test.php",
+		"/C/wamp64/www/README.md",
+		"/C/wamp64/www/createNewVolunteer.php",
+		"/C/wamp64/www/databasePHPFunctions.php",
+		"/C/wamp64/www/selectFromJunction.txt",
+		"/C/wamp64/www/stylesheet.css",
+		"/C/Users/Gideon/Desktop/foodbank 26 Feb before Preferred.sql",
+		"/C/wamp64/www/braydn.html",
+		"/C/Users/Gideon/Desktop/volunteer.sql",
+		"/C/wamp64/www/testJQuery.js",
+		"/C/wamp64/www/updateVolunteerInformation.php",
+		"/C/wamp64/www/updateVolunteerInformation.html",
+		"/C/wamp64/www/newVolunteerFunctions.php",
+		"/C/wamp64/www/newVolunteerConfirmation.php",
+		"/C/Users/Gideon/Documents/food_bank_project/addVolunteer.php",
+		"/C/Users/Gideon/Documents/food_bank_project/index.html",
+		"/C/Users/Gideon/Desktop/index.html",
+		"/C/Users/Gideon/Desktop/stylesheet.css",
+		"/C/Users/Gideon/Google Drive/College/Operating Systems Theory/Chapter 6 Notes",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/dontEnterTheNumber.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/colaMachine.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/gradingProgram.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/multiplicationTable.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/structures1.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/structures.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/php/test.php",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/test.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/test1.cpp"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hidden",
+			"active",
+			"var",
+			"event.preventDefault();",
+			"select",
+			"$self",
+			"dropdown",
+			"postition",
+			"select",
+			"9",
+			"postco",
+			"?",
+			"();\n",
+			"foreach($row as $value) {\n\t\t\techo $value;\n\t\t}",
+			"\"]);\n",
+			"echo",
+			"volunteerGender",
+			"mysqli",
+			"form",
+			"form ",
+			"form",
+			"select",
+			"volunteerInformationLeft",
+			"500px",
+			"<input type=\"submit\" name=\"clearVolunteer\" value=\"Clear\">",
+			"<input type=\"submit\" name=\"submitVolunteer\">",
+			"frontRadio",
+			"frontCheck",
+			">\n",
+			"mondayCheck",
+			"\">\n",
+			"index.php",
+			"car1",
+			"string",
+			"car1",
+			"string",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"this\nthis\nthis",
+			"frontCheck",
+			"frontRadio",
+			"tuesdayCheck"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 229.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 192.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
