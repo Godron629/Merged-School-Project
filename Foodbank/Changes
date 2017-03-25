@@ -84,7 +84,8 @@ Moved login_submit.php from /Foodbank/Admin to /Foodbank
 
 Added /Foodbank/Testing and moved testing files into it
 
-Moved /Foodbank/code/php/newVolunteer_submit to /Foodbank/Volunteer
-Moved /Foodbank/code/php/updateVolunteer_submit to /Foodbank/Volunteer
+Moved /Foodbank/code/php/newVolunteer_submit.php to /Foodbank/Volunteer
+Moved /Foodbank/code/php/updateVolunteer_submit.php to /Foodbank/Volunteer
+Moved /Foodbank/code/php/deleteVolunteer.php to /Foodbank/Volunteer
 
 
