@@ -36,7 +36,7 @@ $(document).ready(function() {
 		        }					
 			}).dialog("open");
 		} else {
-			//From updateVolunteer.js
+			//Declared in updateVolunteer.js
 			$("#noneSelectedDialog").dialog("open");
 		}
 		

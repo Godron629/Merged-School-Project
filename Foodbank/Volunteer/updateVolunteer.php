@@ -34,8 +34,8 @@ if(!isset($_SESSION['user_id'])) {
 
 	<!-- Default Scripts -->
 	<script src="/Foodbank/Volunteer/javascript/loadVolunteer.js"></script>
-	<script src="/Foodbank/code/javascript/updateVolunteer.js"></script>
-	<script src="/Foodbank/code/javascript/deleteVolunteer.js"></script>
+	<script src="/Foodbank/Volunteer/javascript/updateVolunteer.js"></script>
+	<script src="/Foodbank/Volunteer/javascript/deleteVolunteer.js"></script>
 	</script>
 </head>
 <body class="wrapper">
