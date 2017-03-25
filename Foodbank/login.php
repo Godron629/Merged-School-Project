@@ -22,7 +22,7 @@ if(isset($_SESSION['user_id'])) {
 	<a href="/Foodbank/"><img id="loginLogo" src="images/logo.gif"></a>
 	
 	<h2>Admin Login</h2><br>
-	<form class="loginButtons" action="/Foodbank/Admin/login_submit.php" method="post">
+	<form class="loginButtons" action="/Foodbank/login_submit.php" method="post">
 		<fieldset>
 		<p>
 		<label for="username">Username</label>
