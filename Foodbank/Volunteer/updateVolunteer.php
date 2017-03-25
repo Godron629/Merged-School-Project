@@ -33,7 +33,7 @@ if(!isset($_SESSION['user_id'])) {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
 
 	<!-- Default Scripts -->
-	<script src="/Foodbank/code/javascript/loadVolunteer.js"></script>
+	<script src="/Foodbank/Volunteer/javascript/loadVolunteer.js"></script>
 	<script src="/Foodbank/code/javascript/updateVolunteer.js"></script>
 	<script src="/Foodbank/code/javascript/deleteVolunteer.js"></script>
 	</script>

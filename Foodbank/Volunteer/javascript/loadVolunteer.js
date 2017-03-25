@@ -12,7 +12,7 @@ $(document).ready(function() {
 			}
 
 			$.ajax({
-				url: '/Foodbank/code/php/loadUpdateFields.php',
+				url: '/Foodbank/Volunteer/updateVolunteer_loadFields.php',
 				type: 'POST',
 				data: selection,
 				dataType: 'json',

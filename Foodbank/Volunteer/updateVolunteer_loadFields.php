@@ -1,5 +1,5 @@
 <?php include 'C:/wamp64/www/Foodbank/code/php/databaseFunctions.php';
-//Used in /Foodbank/code/javascript/loadVolunteer.js to get information about a volunteer that the javascript file will load into all of the form fields
+//Used to get information about a volunteer that the javascript file will load into all of the form fields
 
 $volunteerId = $_POST['id']; 
 
