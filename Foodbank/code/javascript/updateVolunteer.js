@@ -61,7 +61,7 @@ $(document).ready(function() {
 				        },
 				        "Save" : function() {
 							$.ajax({
-								url: "/Foodbank/code/php/updateVolunteer_submit.php",
+								url: "/Foodbank/Volunteer/updateVolunteer_submit.php",
 								type: "POST", 
 								data: { form1 : origForm, form2 : changedForm},
 								success: function(data) {
