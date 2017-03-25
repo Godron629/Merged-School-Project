@@ -249,7 +249,7 @@ function unLockNotes(id)
 	
 			</div>
 			<div class="container bigButtons" id="submitButtons">
-				<a href="/Foodbank/code/php/newVolunteer_submit.php"><button type="button">Cancel</button></a>
+				<a href="/Foodbank/Volunteer/UpdateVolunteerTime.php"><button type="button">Cancel</button></a>
 				<input type="submit" name="submitVolunteer">
 			</div>
 		</form>

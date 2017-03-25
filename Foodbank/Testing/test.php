@@ -1,7 +1,4 @@
 <?php 
 
-$test = "Gideon";
-
-echo $test;
-
+$serverRoot = $_SERVER['DOCUMENT_ROOT'];
 ?>

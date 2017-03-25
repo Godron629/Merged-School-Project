@@ -19,7 +19,7 @@ $(document).ready(function() {
 		$.ajax({
 			type: 'POST', 
 			data: $("#volunteerForm").serialize(),
-			url : '/Foodbank/code/php/newVolunteer_submit.php',
+			url : '/Foodbank/Volunteer/newVolunteer_submit.php',
 			success : function(data) {
 				$("#successDialog").dialog("open");			
 			}
