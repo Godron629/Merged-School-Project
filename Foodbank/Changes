@@ -78,12 +78,11 @@ Added foreign key relationships between volunteer and calendar_entry, clock_entr
 Moved addUser.php from /Foodbank/Admin/php to /Foodbank/Admin
 Moved addUser_submit.php from /Foodbank/Admin/php to /Foodbank/Admin
 Deleted /Foodbank/Admin/php 
+Delete /Foodbank/code/php/databaseClass.php -> Never used
 
 Moved login_submit.php from /Foodbank/Admin to /Foodbank
 
 Added /Foodbank/Testing and moved testing files into it
-
-Delete /Foodbank/code/php/databaseClass.php -> Never used
 
 
 

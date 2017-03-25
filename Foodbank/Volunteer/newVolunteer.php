@@ -10,7 +10,7 @@ if(!isset($_SESSION['user_id'])) {
 <html>
 <head>
 	<title>New Volunteer</title>
-	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="/Foodbank/css/stylesheet.css">
 
 	<!-- jQuery  -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
