@@ -25,7 +25,7 @@ $(document).ready(function() {
 			        "Delete" : function() {
 			        	$(this).dialog("close");
 						$.ajax({
-							url: "/Foodbank/code/php/deleteVolunteer.php",
+							url: "/Foodbank/Volunteer/deleteVolunteer.php",
 							type: "POST", 
 							data: {id : volunteerId},
 							success: function(data) {
