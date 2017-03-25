@@ -25,7 +25,7 @@ if(!isset($_SESSION['user_id'])) {
   	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />	
 
 	<!-- Default Scripts -->
-	<script src="/Foodbank/code/javascript/newVolunteer.js"></script>
+	<script src="/Foodbank/Volunteer/javascript/newVolunteer.js"></script>
 </head>
 <body class="wrapper">
 

@@ -122,7 +122,7 @@ function changeDepartmentRows($changedFields, $changeForm) {
 
 function changeVolunteerRows ($changedFields, $changeForm) {
 	//Json file maps form input names to database columns. 
-	$jsonFile = file_get_contents($_SERVER["DOCUMENT_ROOT"] . '/Foodbank/code/javascript/databaseColumnNames.json');
+	$jsonFile = file_get_contents($_SERVER["DOCUMENT_ROOT"] . '/Foodbank/Volunteer/javascript/databaseColumnNames.json');
 
 	$fieldToColumnMap = json_decode($jsonFile, true);
 
