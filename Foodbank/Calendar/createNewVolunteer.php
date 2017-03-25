@@ -1,5 +1,5 @@
 <?php 
-include $_SERVER['DOCUMENT_ROOT'] . "/php/databasePHPFunctions.php";
+require_once "/Foodbank/php/databaseFunctions.php";
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		createVolunteer();
