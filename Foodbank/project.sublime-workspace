@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"create",
+				"createBackupButton"
+			],
+			[
 				"for",
 				"foreach\tforeach …"
 			],
@@ -159,6 +163,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/C/wamp64/logs/php_error.log",
+			"settings":
+			{
+				"buffer_size": 133703,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -184,24 +196,28 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "start",
+		"last_filter": "stop",
 		"selected_items":
 		[
-			[
-				"start",
-				"Xdebug: Restart Session"
-			],
 			[
 				"stop",
 				"Xdebug: Stop Debugging (Close Windows)"
 			],
 			[
-				"stop de",
-				"Xdebug: Stop Debugging (Close Windows)"
-			],
-			[
 				"restart",
 				"Xdebug: Restart Session"
+			],
+			[
+				"start",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
+			[
+				"rest",
+				"Xdebug: Restart Session"
+			],
+			[
+				"stop de",
+				"Xdebug: Stop Debugging (Close Windows)"
 			],
 			[
 				"res",
@@ -236,20 +252,63 @@
 	},
 	"expanded_folders":
 	[
-		"/C/wamp64/www/Foodbank"
+		"/C/wamp64/www/Foodbank",
+		"/C/wamp64/www/Foodbank/Admin",
+		"/C/wamp64/www/Foodbank/code",
+		"/C/wamp64/www/Foodbank/code/php",
+		"/C/wamp64/www/Foodbank/css",
+		"/C/wamp64/www/Foodbank/databaseBackup",
+		"/C/wamp64/www/Foodbank/Volunteer"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/Foodbank/Admin/home.php",
+		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackup.php",
+		"/C/wamp64/logs/php_error.log",
+		"/C/wamp64/www/Foodbank/databaseBackup/createBackup.php",
+		"/C/wamp64/bin/apache/apache2.4.23/bin/php.ini",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf",
+		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackupFunctions.php",
+		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackup.js",
+		"/C/wamp64/www/Foodbank/code/php/databaseFunctions.php",
+		"/C/wamp64/www/Foodbank/Changes",
+		"/C/wamp64/www/Foodbank/Calendar/newEntry.php",
+		"/C/wamp64/www/Foodbank/Calendar/updateEntry.php",
+		"/C/wamp64/www/Foodbank/Calendar/index.php",
+		"/C/wamp64/www/Foodbank/Calendar/test.html",
+		"/C/wamp64/www/Foodbank/Reports/reports.php",
+		"/C/wamp64/www/Foodbank/Volunteer/UpdateVolunteerTime.php",
+		"/C/wamp64/www/Foodbank/Volunteer/newVolunteer.php",
+		"/C/wamp64/www/Foodbank/Volunteer/updateVolunteer.php",
+		"/C/wamp64/www/Foodbank/TimeClock/index.php",
+		"/C/wamp64/www/Foodbank/TimeClock/2017-03-24.xml",
+		"/C/wamp64/www/Foodbank/login.php",
+		"/C/wamp64/www/Foodbank/Volunteer/updateVolunteer_submit.php",
+		"/C/wamp64/www/Foodbank/Volunteer/javascript/deleteVolunteer.js",
+		"/C/wamp64/www/Foodbank/Volunteer/javascript/loadVolunteer.js",
+		"/C/wamp64/www/Foodbank/code/javascript/loadVolunteer.js",
+		"/C/wamp64/www/Foodbank/Volunteer/updateVolunteer_loadFields.php",
+		"/C/wamp64/www/Foodbank/code/php/loadUpdateFields.php",
+		"/C/wamp64/www/Foodbank/code/javascript/deleteVolunteer.js",
+		"/C/wamp64/www/Foodbank/code/javascript/updateVolunteer.js",
+		"/C/wamp64/www/Foodbank/code/javascript/newVolunteer.js",
+		"/C/wamp64/www/Foodbank/project.sublime-project",
+		"/C/wamp64/www/Foodbank/Testing/test.php",
+		"/C/wamp64/www/Foodbank/Volunteer/New Volunteer/newVolunteer.php",
+		"/C/wamp64/www/Foodbank/code/php/selectPopulate.php",
+		"/C/wamp64/www/Foodbank/Calendar/createNewVolunteer.php",
+		"/C/wamp64/www/Foodbank/code/php/createNewVolunteer.php",
+		"/C/wamp64/www/Foodbank/README.md",
+		"/C/wamp64/www/Foodbank/Admin/addUser.php",
+		"/C/wamp64/www/Foodbank/Admin/php/addUser.php",
 		"/C/wamp64/www/javascript/updateVolunteer.js",
 		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
 		"/C/wamp64/logs/mysql.log",
-		"/C/wamp64/logs/php_error.log",
 		"/C/wamp64/www/php/databasePHPFunctions.php",
 		"/C/wamp64/www/php/test.php",
 		"/C/wamp64/www/foodbank.sublime-project",
 		"/C/wamp64/www/javascript/databaseColumnNames.json",
 		"/C/wamp64/www/javascript/loadVolunteer.js",
-		"/C/wamp64/bin/apache/apache2.4.23/bin/php.ini",
 		"/C/wamp64/www/index2.php",
 		"/C/wamp64/www/php/updateVolunteer.php",
 		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
@@ -291,7 +350,6 @@
 		"/C/Users/Gideon/Desktop/index.html",
 		"/C/Users/Gideon/Desktop/stylesheet.css",
 		"/C/Users/Gideon/Google Drive/College/Operating Systems Theory/Chapter 6 Notes",
-		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf",
 		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/dontEnterTheNumber.cpp",
 		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/colaMachine.cpp",
 		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/gradingProgram.cpp",
@@ -304,7 +362,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -319,6 +377,36 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"priv",
+			"secure-",
+			">\n",
+			">Time Clock",
+			"loginButton",
+			">Time Clock",
+			"> Time Clock",
+			"include",
+			"src=",
+			"databaseFunctions.php",
+			"databaseColumnNames.json",
+			"newVolunteer.js",
+			"updateVolunteer.js",
+			"deleteVolunteer.js",
+			"updateVolunteer_loadFields.php",
+			"loadVolunteer.js",
+			"loadUpdateFields",
+			"deleteVolunteer.php",
+			"updateVolunteer_submit.php",
+			"newVolunteer_submit.php",
+			"newVolunteer.php",
+			"selectPopulate",
+			"databasePHPFunctions.php",
+			"newVolunteer.php",
+			"createNewVolunteer.php",
+			"newVolunteer.php",
+			"databasePHPFunctions.php",
+			"login_submit.php",
+			"addUser_submit.php",
+			"addUser.php",
 			"hidden",
 			"active",
 			"var",
@@ -377,8 +465,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/wamp64/logs/php_error.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 133703,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132870,
+								132870
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 51140.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -464,14 +581,93 @@
 	{
 		"xdebug":
 		{
-			"hide_conflict": false
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"15":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"16":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"17":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"18":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"23":
+				{
+					"group": 0,
+					"index": 7
+				},
+				"24":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"25":
+				{
+					"group": 0,
+					"index": 6
+				},
+				"26":
+				{
+					"group": 0,
+					"index": 5
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.111157024793,
+					1.0
+				]
+			}
 		}
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 192.0,
+	"side_bar_width": 208.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

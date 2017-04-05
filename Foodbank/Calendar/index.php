@@ -168,8 +168,8 @@ $tempString = "{$year}";
 	array_push($dateArray, $tempString);
 }
 
-//Variables for calendar structure - requires clean up
-$startOfMonth = unixtojd(mktime(0, 0, 0, $month, 2, $year));
+//Variables for calendar structure - requires clean up 
+$startOfMonth = unixtojd(mktime(0, 0, 0, $month, 1, $year));
 $test = (cal_from_jd($startOfMonth, CAL_GREGORIAN));
 $temp = $daysOfTheWeek[$test['dayname']];
 $dayOne = "";

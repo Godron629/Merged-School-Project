@@ -191,7 +191,7 @@ $daysOfTheWeek = array("Sunday" => "0", "Monday" => "1", "Tuesday" => "2", "Wedn
 $daysOfTheWeekRev = array("0" => "Sunday", "1" => "Monday", "2" => "Tuesday", "3" => "Wednesday", "4" => "Thursday", "5" => "Friday", "6" => "Saturday");
 
 //get the start of the month values
-$startOfMonth = unixtojd(mktime(0, 0, 0, $month, 2, $year));
+$startOfMonth = unixtojd(mktime(0, 0, 0, $month, 1, $year));
 $test = (cal_from_jd($startOfMonth, CAL_GREGORIAN));
 
 //calendar formatting variables

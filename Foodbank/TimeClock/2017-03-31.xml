@@ -1,0 +1,24 @@
+<timeclock>
+
+<entry>
+<id>-1</id>
+<name>-1</name>
+<clockIn>-1</clockIn>
+<clockOut>-1</clockOut>
+</entry>
+
+<entry>
+<id>-2</id>
+<name>-2</name>
+<clockIn>-2</clockIn>
+<clockOut>-2</clockOut>
+</entry>
+
+ <entry>
+<id>3</id>
+<name>Jeff Emshey</name>
+<clockIn>22:33:15</clockIn>
+<clockOut>22:33:23</clockOut>
+</entry>
+
+ </timeclock>
