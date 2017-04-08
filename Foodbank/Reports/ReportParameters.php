@@ -45,7 +45,7 @@ date_default_timezone_set('America/Edmonton');
 			
 			echo "<br><br>Front <input name='paramInclude' checked value='Front' type='radio'></input>";
 			echo "| Volunteer Intake Coordinator <input name='paramInclude' value='Volunteer Intake Coordinator' type='radio'></input>";
-			echo "| Kitchen <input value='hide1' name='paramInclude' value='Kitchen' type='radio'></input>";
+			echo "| Kitchen <input name='paramInclude' value='Kitchen' type='radio'></input>";
 			echo "| Warehouse <input name='paramInclude' value='Warehouse' type='radio'></input>";
 			
 		} break;

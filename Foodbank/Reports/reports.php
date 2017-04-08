@@ -18,6 +18,7 @@ if(!isset($_SESSION['user_id'])) {
 
 //echo $_GET['q'];
 date_default_timezone_set('America/Edmonton');
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -148,23 +149,40 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 			{
 				//single day values
 				$sun_value= date('d', strtotime('Sunday this week'));
-				$mon_value= date('d', strtotime('Monday this week'));
-				$tue_value= date('d', strtotime('Tuesday this week'));
-				$wed_value= date('d', strtotime('Wednesday this week'));
-				$thu_value= date('d', strtotime('Thursday this week'));
-				$fri_value= date('d', strtotime('Friday this week'));				
+				$mon_value= date('d', strtotime('next Monday -1 week'));
+				$tue_value= date('d', strtotime('next Tuesday -1 week'));
+				$wed_value= date('d', strtotime('next Wednesday -1 week'));
+				$thu_value= date('d', strtotime('next Thursday -1 week'));
+				$fri_value= date('d', strtotime('next Friday -1 week'));		
 				$sat_value= date('d', strtotime('Saturday this week'));		
 
-				$dateArray =
-				//yy-mm-dd for database comparison
-				array(
-				"mon"=> date('y-m-d', strtotime('Monday this week')),
-				"tue"=> date('y-m-d', strtotime('Tuesday this week')),
-				"wed"=> date('y-m-d', strtotime('Wednesday this week')),
-				"thu"=> date('y-m-d', strtotime('Thursday this week')),
-				"fri"=> date('y-m-d', strtotime('Friday this week')),			
-				"sat"=> date('y-m-d', strtotime('Saturday this week')),
-				"sun"=> date('y-m-d', strtotime('Sunday this week')));
+				if(date('D') === date('D', strtotime('Saturday this week'))) {
+					$sat_value = date('d', strtotime('Saturday this week'));
+				} else {
+					$sat_value = date('d', strtotime('next Saturday -1 week'));
+				}
+
+				if(date('D') === date('D', strtotime('Saturday this week'))) {
+					$dateArray = array(
+					//yy-mm-dd for database comparison
+					"mon"=> date('y-m-d', strtotime('next Monday -1 week')),
+					"tue"=> date('y-m-d', strtotime('next Tuesday -1 week')),
+					"wed"=> date('y-m-d', strtotime('next Wednesday -1 week')),
+					"thu"=> date('y-m-d', strtotime('next Thursday -1 week')),
+					"fri"=> date('y-m-d', strtotime('next Friday -1 week')),			
+					"sat"=> date('y-m-d', strtotime('Saturday this week')),
+					"sun"=> date('y-m-d', strtotime('Sunday this week')));
+				} else {
+					$dateArray = array(
+					"mon"=> date('y-m-d', strtotime('next Monday -1 week')),
+					"tue"=> date('y-m-d', strtotime('next Tuesday -1 week')),
+					"wed"=> date('y-m-d', strtotime('next Wednesday -1 week')),
+					"thu"=> date('y-m-d', strtotime('next Thursday -1 week')),
+					"fri"=> date('y-m-d', strtotime('next Friday -1 week')),			
+					"sat"=> date('y-m-d', strtotime('next Saturday -1 week')),
+					"sun"=> date('y-m-d', strtotime('Sunday this week')));
+				}
+
 				
 				$reportAppend = "";
 				

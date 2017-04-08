@@ -23,7 +23,7 @@ $_SESSION['form_token'] = $form_token;
 
 <body class='Loginwrapper'>
 <div class="centerAlign container">
-	<img id="loginLogo" src="/Foodbank/images/logo.gif">
+	<a href="#" onclick="goBack()"> <img id="loginLogo" src="/Foodbank/images/logo.gif"></a>
 	<h2>Add User</h2>
 	<form action="/Foodbank/Admin/addUser_submit.php" class="loginButtons" method="post">
 		<fieldset>
