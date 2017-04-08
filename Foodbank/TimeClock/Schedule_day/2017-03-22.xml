@@ -1,0 +1,129 @@
+<timeclock>
+
+<entry>
+<id>-1</id>
+<name>-1</name>
+<clockIn>-1</clockIn>
+<clockOut>-1</clockOut>
+</entry>
+
+<entry>
+<id>-2</id>
+<name>-2</name>
+<clockIn>-2</clockIn>
+<clockOut>-2</clockOut>
+</entry>
+
+ <entry>
+<id>7</id>
+<name>Mike Richter</name>
+<clockIn>21:45:23</clockIn>
+<clockOut></clockOut>
+</entry>
+
+ <entry>
+<id>5</id>
+<name>Ryan  Lockett</name>
+<clockIn>21:45:27</clockIn>
+<clockOut>21:50:16</clockOut>
+</entry>
+
+ <entry>
+<id>5</id>
+<name>Ryan  Lockett</name>
+<clockIn>21:50:29</clockIn>
+<clockOut>21:50:36</clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>21:50:32</clockIn>
+<clockOut>03:34:26</clockOut>
+</entry>
+
+ <entry>
+<id>9</id>
+<name>Travis Sipko</name>
+<clockIn>21:52:16</clockIn>
+<clockOut></clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>03:33:50</clockIn>
+<clockOut>03:33:56</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>03:34:17</clockIn>
+<clockOut>22:56:48</clockOut>
+</entry>
+
+ <entry>
+<id>3</id>
+<name>Jeff  Emshey</name>
+<clockIn>03:34:22</clockIn>
+<clockOut></clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>22:56:59</clockIn>
+<clockOut>22:58:44</clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>22:59:58</clockIn>
+<clockOut>23:00:03</clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>23:00:18</clockIn>
+<clockOut>23:00:19</clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>23:00:21</clockIn>
+<clockOut>23:01:25</clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>23:02:23</clockIn>
+<clockOut>23:02:25</clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>23:02:57</clockIn>
+<clockOut>23:04:13</clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>23:04:18</clockIn>
+<clockOut>23:04:36</clockOut>
+</entry>
+
+ <entry>
+<id>2</id>
+<name>Erin  Richter</name>
+<clockIn>23:04:43</clockIn>
+<clockOut></clockOut>
+</entry>
+
+ </timeclock>

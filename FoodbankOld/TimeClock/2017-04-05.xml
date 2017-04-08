@@ -1,0 +1,59 @@
+<timeclock>
+
+<entry>
+<id>-1</id>
+<name>-1</name>
+<clockIn>-1</clockIn>
+<clockOut>-1</clockOut>
+</entry>
+
+<entry>
+<id>-2</id>
+<name>-2</name>
+<clockIn>-2</clockIn>
+<clockOut>-2</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>09:45:42</clockIn>
+<clockOut>09:45:48</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>09:46:49</clockIn>
+<clockOut>09:46:53</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>09:48:04</clockIn>
+<clockOut>09:48:08</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>09:57:26</clockIn>
+<clockOut>10:19:59</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>14:14:55</clockIn>
+<clockOut>14:15:14</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>14:15:38</clockIn>
+<clockOut></clockOut>
+</entry>
+
+ </timeclock>

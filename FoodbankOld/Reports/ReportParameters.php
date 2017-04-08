@@ -42,11 +42,7 @@ date_default_timezone_set('America/Edmonton');
 			$mon_value= date('d', strtotime('Monday this week'));
 			
 			echo "Weekly Schedule: " . $currDate['month'] . " " .$mon_value . " - " . $currDate['month'] . " " .$sun_value . ", " . " " . $currDate['year'];
-			
-			echo "<br><br>Front <input name='paramInclude' checked value='Front' type='radio'></input>";
-			echo "| Volunteer Intake Coordinator <input name='paramInclude' value='Volunteer Intake Coordinator' type='radio'></input>";
-			echo "| Kitchen <input value='hide1' name='paramInclude' value='Kitchen' type='radio'></input>";
-			echo "| Warehouse <input name='paramInclude' value='Warehouse' type='radio'></input>";
+	
 			
 		} break;
 		case "report4":

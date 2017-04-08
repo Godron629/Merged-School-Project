@@ -80,7 +80,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 					}
 					else
 					{
-						$note = htmlspecialchars(mysqli_real_escape_string($conn,$_POST[$entryID]));
+						$note = $_POST[$entryID];
 					}
 					$sql = "update clock_entry set clock_hours_worked='". $updatedTime ."', Notes='". $note ."'where clock_entry_id='". $entryID . "'";
 					$conn->query($sql);

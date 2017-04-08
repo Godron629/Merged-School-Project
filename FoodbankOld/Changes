@@ -1,0 +1,102 @@
+****10:30PM March 22, 2017 - Gideon Richter****
+
+Changed .loginWrapper class to 280px height
+
+Added .password class to css 
+Changed password on Admin login to be type="text" with password class
+
+Added Calendar, Reports, Timeclock List to Home
+
+Removed #loginBox from CSS, also removed from relevant pages
+	Foodbank/login
+	Foodbank/Admin/login_submit
+	Foodbank/Admin/loginRequired.php
+	Foodbank/Admin/logout
+	Foodbank/Admin/php/addUser.php
+	Foodbank/Admin/php/addUser_submit.php
+
+Added class .container to first div inside .loginWrapper divs
+	Foodbank/login
+	Foodbank/Admin/login_submit
+	Foodbank/Admin/loginRequired.php
+	Foodbank/Admin/logout
+	Foodbank/Admin/php/addUser.php
+	Foodbank/Admin/php/addUser_submit.php
+
+Commented out Timeclock/index.php and changed it to the Login Style, all old code is still there. 
+
+Added select2() jQuery Box to TimeClock with 190px width
+
+Added a bunch of XML entries in the process ^
+
+Moved the if(sessionVar is set) {header: }; below the CSS call in Foodbank/login.php
+
+--> If you have not made any changes to your files yet, you should be able to download all of these changes off of GitHub
+
+
+****10:6PM March 22, 2017 - Gideon Richter****
+
+Changed 'username' to 'Username...' on select box - TimeClock/index.php
+
+Added password column to Volunteer in database
+
+Delete createNewVolunteer.php
+Delete databaseClass.php
+
+-->databasePHPFunctions.php should be deleted because it was renamed to databaseFunctions.php but some files have mixed filenames... so just leave it for now
+
+Add makePassword() to Foodbank/code/php/newVolunteer_submit.php to generate password (First inital, last initial, year of birth 'gr1990')
+
+Add dialog div at bottom of /Foodbank/TimeClock/index.php
+Add dialog declaration to /Foodbank/code/javascript/TimeClock.js
+
+Change include to include_once for /Foodbank/code/php/selectPopulate.php;
+
+
+
+
+**** 3/24/2017 Setting up school VPN  - Gideon Richter ****
+Replaced loginBox id with loginWrapper for Already Logged In Page
+
+Created setup instructions
+
+Changed login passwords from type='text' to type='password'
+
+Added .loginButton to 'Logout' to included CSS for Calendar/index.php
+
+!!!!CLOCK-OUT PRODUCES A BUNCH OF DEBUGGING CODE!!!
+
+Change table engine for calendar_entry, clock_entry, users so that relationships can be added
+
+Added indexing to calendar_entry, clock_entry 
+
+Added foreign key relationships between volunteer and calendar_entry, clock_entry
+
+
+
+**** 3/24/2017 Moving files around ****
+
+Moved addUser.php from /Foodbank/Admin/php to /Foodbank/Admin
+Moved addUser_submit.php from /Foodbank/Admin/php to /Foodbank/Admin
+Deleted /Foodbank/Admin/php 
+Delete /Foodbank/code/php/databaseClass.php -> Never used
+
+Moved login_submit.php from /Foodbank/Admin to /Foodbank
+
+
+Added /Foodbank/Testing and moved testing files into it
+
+Moved /Foodbank/code/php/newVolunteer_submit.php to /Foodbank/Volunteer
+Moved /Foodbank/code/php/updateVolunteer_submit.php to /Foodbank/Volunteer
+Moved /Foodbank/code/php/deleteVolunteer.php to /Foodbank/Volunteer
+Moved /Foodbank/code/php/loadVolunteer.php to /Foodbank/Volunteer
+
+Moved /Foodbank/code/javascript/databaseColumnNames.json to /Foodbank/Volunteer/javascript
+Moved /Foodbank/code/javascript/deleteVolunteer.js to /Foodbank/Volunteer/javascript
+Moved /Foodbank/code/javascript/loadVolunteer.js to /Foodbank/Volunteer/javascript
+Moved /Foodbank/code/javascript/newVolunteer.js to /Foodbank/Volunteer/javascript
+Moved /Foodbank/code/javascript/updateVolunteer.js to /Foodbank/Volunteer/javascript
+
+Added TimeClock Admin password to be 'admin@123'
+
+Removed 'Time Clock' link from all pages besides Admin/home.php

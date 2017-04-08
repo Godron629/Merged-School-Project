@@ -1,0 +1,136 @@
+<timeclock>
+
+<entry>
+<id>-1</id>
+<name>-1</name>
+<clockIn>-1</clockIn>
+<clockOut>-1</clockOut>
+</entry>
+
+<entry>
+<id>-2</id>
+<name>-2</name>
+<clockIn>-2</clockIn>
+<clockOut>-2</clockOut>
+</entry>
+
+ <entry>
+<id>17</id>
+<name>Alexa Sipko</name>
+<clockIn>03:38:16</clockIn>
+<clockOut>03:39:18</clockOut>
+</entry>
+
+ <entry>
+<id>18</id>
+<name>NewVol NewVol</name>
+<clockIn>03:38:30</clockIn>
+<clockOut>03:39:54</clockOut>
+</entry>
+
+ <entry>
+<id>17</id>
+<name>Alexa Sipko</name>
+<clockIn>03:40:04</clockIn>
+<clockOut>03:40:22</clockOut>
+</entry>
+
+ <entry>
+<id>18</id>
+<name>NewVol NewVol</name>
+<clockIn>03:40:11</clockIn>
+<clockOut>03:40:33</clockOut>
+</entry>
+
+ <entry>
+<id>17</id>
+<name>Alexa Sipko</name>
+<clockIn>03:40:43</clockIn>
+<clockOut>03:40:55</clockOut>
+</entry>
+
+ <entry>
+<id>18</id>
+<name>NewVol NewVol</name>
+<clockIn>03:40:49</clockIn>
+<clockOut>03:41:09</clockOut>
+</entry>
+
+ <entry>
+<id>18</id>
+<name>NewVol NewVol</name>
+<clockIn>03:44:14</clockIn>
+<clockOut>03:44:54</clockOut>
+</entry>
+
+ <entry>
+<id>17</id>
+<name>Alexa Sipko</name>
+<clockIn>03:44:20</clockIn>
+<clockOut>03:44:26</clockOut>
+</entry>
+
+ <entry>
+<id>18</id>
+<name>NewVol NewVol</name>
+<clockIn>03:45:56</clockIn>
+<clockOut>03:45:58</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>03:52:07</clockIn>
+<clockOut>03:52:13</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>03:52:48</clockIn>
+<clockOut>03:52:56</clockOut>
+</entry>
+
+ <entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>15:34:20</clockIn>
+<clockOut>15:35:54</clockOut>
+</entry>
+
+ <entry>
+<id>3</id>
+<name>Jeff Emshey</name>
+<clockIn>15:34:31</clockIn>
+<clockOut>15:34:40</clockOut>
+</entry>
+
+ <entry>
+<id>4</id>
+<name>Jeffery Sullans</name>
+<clockIn>20:56:18</clockIn>
+<clockOut>20:56:23</clockOut>
+</entry>
+
+ <entry>
+<id>4</id>
+<name>Jeffery Sullans</name>
+<clockIn>20:56:39</clockIn>
+<clockOut>20:56:41</clockOut>
+</entry>
+
+ <entry>
+<id>4</id>
+<name>Jeffery Sullans</name>
+<clockIn>21:42:35</clockIn>
+<clockOut>21:42:47</clockOut>
+</entry>
+
+ <entry>
+<id>4</id>
+<name>Jeffery Sullans</name>
+<clockIn>21:42:58</clockIn>
+<clockOut>21:43:11</clockOut>
+</entry>
+
+ </timeclock>

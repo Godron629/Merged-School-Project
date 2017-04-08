@@ -1,0 +1,675 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"create",
+				"createBackupButton"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"colum",
+				"columnName"
+			],
+			[
+				"map",
+				"mapFieldToColumn"
+			],
+			[
+				"chang",
+				"changedFields"
+			],
+			[
+				"keysOf",
+				"keysOfChangedFields"
+			],
+			[
+				"chagn",
+				"changedFields"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"eme",
+				"emerContactColumns"
+			],
+			[
+				"key",
+				"keysOfFieldsThatChanged"
+			],
+			[
+				"keys",
+				"keysOfFieldsThatChanged"
+			],
+			[
+				"sea",
+				"serializedForm"
+			],
+			[
+				"or",
+				"origForm"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"loadPre",
+				"loadPreferredAvailIntoFields"
+			],
+			[
+				"remove",
+				"removeAttr"
+			],
+			[
+				"load",
+				"loadPreferredAvailibility"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"block",
+				"blockLabels"
+			],
+			[
+				"bloc",
+				"blockLabels"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"volunteer",
+				"volunteerDOB"
+			],
+			[
+				"emergency_con",
+				"emergency_contact_id"
+			],
+			[
+				"emer",
+				"emergencyContactExists"
+			],
+			[
+				"emergencyCon",
+				"emergencyContactExists"
+			],
+			[
+				"makePref",
+				"makePreferredDepartmentRecord"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"join",
+				"joinVolunteerAndEmergencyContact"
+			],
+			[
+				"make",
+				"makeEmergencyContactRecord"
+			],
+			[
+				"real_escape",
+				"mysql_real_escape_string"
+			],
+			[
+				"emergen",
+				"emergency_contact_fname"
+			],
+			[
+				"redirect",
+				"redirectAfter5Seconds"
+			],
+			[
+				"real_esca",
+				"mysql_real_escape_string"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"list-style",
+				"list-style-type"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "TimeClock/index.php",
+			"settings":
+			{
+				"buffer_size": 7972,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php include_once \"C:/wamp64/www/Foodbank/code/php/databaseFunctions.php\";\n\n$filename = date(\"Y-m-d\") . \".xml\";\n\n$xmlfile = fopen($filename, \"w\");\n\nif(!file_exists($filename)) {\n\n$xmlfile = fopen($filename, \"w\");\n\n$txt = \n\"<timeclock>\n\n<entry>\n<id>-1</id>\n<name>-1</name>\n<clockIn>-1</clockIn>\n<clockOut>-1</clockOut>\n</entry>\n\n<entry>\n<id>-2</id>\n<name>-2</name>\n<clockIn>-2</clockIn>\n<clockOut>-2</clockOut>\n</entry>\n\n</timeclock>\n\";\n\nfwrite($xmlfile, $txt);\nfclose($filename);\n}\n\n\n\n?>",
+			"file": "TimeClock/clockEverybodyOutScript.php",
+			"file_size": 513,
+			"file_write_time": 131358823146011418,
+			"settings":
+			{
+				"buffer_size": 488,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"last_filter": "stop",
+		"selected_items":
+		[
+			[
+				"stop",
+				"Xdebug: Stop Debugging (Close Windows)"
+			],
+			[
+				"start",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
+			[
+				"restart",
+				"Xdebug: Restart Session"
+			],
+			[
+				"rest",
+				"Xdebug: Restart Session"
+			],
+			[
+				"stop de",
+				"Xdebug: Stop Debugging (Close Windows)"
+			],
+			[
+				"res",
+				"Xdebug: Restart Session"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build With: C++ Single File"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/Foodbank",
+		"/C/wamp64/www/Foodbank/Admin",
+		"/C/wamp64/www/Foodbank/code",
+		"/C/wamp64/www/Foodbank/code/php",
+		"/C/wamp64/www/Foodbank/css",
+		"/C/wamp64/www/Foodbank/databaseBackup",
+		"/C/wamp64/www/Foodbank/TimeClock",
+		"/C/wamp64/www/Foodbank/Volunteer"
+	],
+	"file_history":
+	[
+		"/C/wamp64/logs/php_error.log",
+		"/C/wamp64/www/Foodbank/TimeClock/2017-04-05.xml",
+		"/C/wamp64/www/Foodbank/TimeClock/index.php",
+		"/C/wamp64/www/Foodbank/Admin/home.php",
+		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackup.php",
+		"/C/wamp64/www/Foodbank/databaseBackup/createBackup.php",
+		"/C/wamp64/bin/apache/apache2.4.23/bin/php.ini",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf",
+		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackupFunctions.php",
+		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackup.js",
+		"/C/wamp64/www/Foodbank/code/php/databaseFunctions.php",
+		"/C/wamp64/www/Foodbank/Changes",
+		"/C/wamp64/www/Foodbank/Calendar/newEntry.php",
+		"/C/wamp64/www/Foodbank/Calendar/updateEntry.php",
+		"/C/wamp64/www/Foodbank/Calendar/index.php",
+		"/C/wamp64/www/Foodbank/Calendar/test.html",
+		"/C/wamp64/www/Foodbank/Reports/reports.php",
+		"/C/wamp64/www/Foodbank/Volunteer/UpdateVolunteerTime.php",
+		"/C/wamp64/www/Foodbank/Volunteer/newVolunteer.php",
+		"/C/wamp64/www/Foodbank/Volunteer/updateVolunteer.php",
+		"/C/wamp64/www/Foodbank/TimeClock/2017-03-24.xml",
+		"/C/wamp64/www/Foodbank/login.php",
+		"/C/wamp64/www/Foodbank/Volunteer/updateVolunteer_submit.php",
+		"/C/wamp64/www/Foodbank/Volunteer/javascript/deleteVolunteer.js",
+		"/C/wamp64/www/Foodbank/Volunteer/javascript/loadVolunteer.js",
+		"/C/wamp64/www/Foodbank/code/javascript/loadVolunteer.js",
+		"/C/wamp64/www/Foodbank/Volunteer/updateVolunteer_loadFields.php",
+		"/C/wamp64/www/Foodbank/code/php/loadUpdateFields.php",
+		"/C/wamp64/www/Foodbank/code/javascript/deleteVolunteer.js",
+		"/C/wamp64/www/Foodbank/code/javascript/updateVolunteer.js",
+		"/C/wamp64/www/Foodbank/code/javascript/newVolunteer.js",
+		"/C/wamp64/www/Foodbank/project.sublime-project",
+		"/C/wamp64/www/Foodbank/Testing/test.php",
+		"/C/wamp64/www/Foodbank/Volunteer/New Volunteer/newVolunteer.php",
+		"/C/wamp64/www/Foodbank/code/php/selectPopulate.php",
+		"/C/wamp64/www/Foodbank/Calendar/createNewVolunteer.php",
+		"/C/wamp64/www/Foodbank/code/php/createNewVolunteer.php",
+		"/C/wamp64/www/Foodbank/README.md",
+		"/C/wamp64/www/Foodbank/Admin/addUser.php",
+		"/C/wamp64/www/Foodbank/Admin/php/addUser.php",
+		"/C/wamp64/www/javascript/updateVolunteer.js",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/C/wamp64/logs/mysql.log",
+		"/C/wamp64/www/php/databasePHPFunctions.php",
+		"/C/wamp64/www/php/test.php",
+		"/C/wamp64/www/foodbank.sublime-project",
+		"/C/wamp64/www/javascript/databaseColumnNames.json",
+		"/C/wamp64/www/javascript/loadVolunteer.js",
+		"/C/wamp64/www/index2.php",
+		"/C/wamp64/www/php/updateVolunteer.php",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/C/wamp64/www/css/stylesheet.css",
+		"/C/Users/Gideon/Desktop/index.js",
+		"/C/wamp64/www/php/test.js",
+		"/C/wamp64/www/php/testphp.php",
+		"/C/wamp64/www/php/loadUpdateFields.php",
+		"/C/wamp64/www/index.php",
+		"/C/wamp64/www/php/createNewVolunteer.php",
+		"/C/wamp64/www/php/test.html",
+		"/C/wamp64/www/php/testjs.js",
+		"/C/Users/Gideon/Desktop/temp/loadFieldsFromDatabase.php",
+		"/C/wamp64/www/myPHPFiles/createNewVolunteer.php",
+		"/C/wamp64/www/myPHPFiles/test.php",
+		"/C/wamp64/www/myPHPFiles/databasePHPFunctions.php",
+		"/C/wamp64/www/myPHPFiles/updateVolunteer.php",
+		"/C/wamp64/www/updateVolunteer.php",
+		"/C/wamp64/www/updateVolunteer.js",
+		"/C/wamp64/www/myPHPFiles/databaseClass.php",
+		"/C/wamp64/www/myPHPFiles/volunteerClass.php",
+		"/C/wamp64/www/myPHPFiles/postClass.php",
+		"/C/wamp64/www/test.php",
+		"/C/wamp64/www/README.md",
+		"/C/wamp64/www/createNewVolunteer.php",
+		"/C/wamp64/www/databasePHPFunctions.php",
+		"/C/wamp64/www/selectFromJunction.txt",
+		"/C/wamp64/www/stylesheet.css",
+		"/C/Users/Gideon/Desktop/foodbank 26 Feb before Preferred.sql",
+		"/C/wamp64/www/braydn.html",
+		"/C/Users/Gideon/Desktop/volunteer.sql",
+		"/C/wamp64/www/testJQuery.js",
+		"/C/wamp64/www/updateVolunteerInformation.php",
+		"/C/wamp64/www/updateVolunteerInformation.html",
+		"/C/wamp64/www/newVolunteerFunctions.php",
+		"/C/wamp64/www/newVolunteerConfirmation.php",
+		"/C/Users/Gideon/Documents/food_bank_project/addVolunteer.php",
+		"/C/Users/Gideon/Documents/food_bank_project/index.html",
+		"/C/Users/Gideon/Desktop/index.html",
+		"/C/Users/Gideon/Desktop/stylesheet.css",
+		"/C/Users/Gideon/Google Drive/College/Operating Systems Theory/Chapter 6 Notes",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/dontEnterTheNumber.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/colaMachine.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/gradingProgram.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/multiplicationTable.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/structures1.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/structures.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/php/test.php",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/test.cpp",
+		"/C/Users/Gideon/AppData/Roaming/Sublime Text 3/Packages/User/test1.cpp"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"priv",
+			"secure-",
+			">\n",
+			">Time Clock",
+			"loginButton",
+			">Time Clock",
+			"> Time Clock",
+			"include",
+			"src=",
+			"databaseFunctions.php",
+			"databaseColumnNames.json",
+			"newVolunteer.js",
+			"updateVolunteer.js",
+			"deleteVolunteer.js",
+			"updateVolunteer_loadFields.php",
+			"loadVolunteer.js",
+			"loadUpdateFields",
+			"deleteVolunteer.php",
+			"updateVolunteer_submit.php",
+			"newVolunteer_submit.php",
+			"newVolunteer.php",
+			"selectPopulate",
+			"databasePHPFunctions.php",
+			"newVolunteer.php",
+			"createNewVolunteer.php",
+			"newVolunteer.php",
+			"databasePHPFunctions.php",
+			"login_submit.php",
+			"addUser_submit.php",
+			"addUser.php",
+			"hidden",
+			"active",
+			"var",
+			"event.preventDefault();",
+			"select",
+			"$self",
+			"dropdown",
+			"postition",
+			"select",
+			"9",
+			"postco",
+			"?",
+			"();\n",
+			"foreach($row as $value) {\n\t\t\techo $value;\n\t\t}",
+			"\"]);\n",
+			"echo",
+			"volunteerGender",
+			"mysqli",
+			"form",
+			"form ",
+			"form",
+			"select",
+			"volunteerInformationLeft",
+			"500px",
+			"<input type=\"submit\" name=\"clearVolunteer\" value=\"Clear\">",
+			"<input type=\"submit\" name=\"submitVolunteer\">",
+			"frontRadio",
+			"frontCheck",
+			">\n",
+			"mondayCheck",
+			"\">\n",
+			"index.php",
+			"car1",
+			"string",
+			"car1",
+			"string",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"this\nthis\nthis",
+			"frontCheck",
+			"frontRadio",
+			"tuesdayCheck"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "TimeClock/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3510,
+								3510
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2906.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "TimeClock/clockEverybodyOutScript.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 488,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								348,
+								348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 229.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "Packages/C++/C++ Single File.sublime-build",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"20":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"31":
+				{
+					"group": 0,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 250.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -83,7 +83,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 			{				
 				$time = date("H:i:s");
 				$date = date("Y-m-d");
-				$path = "C:/wamp64/www/Foodbank/TimeClock/Schedule_day/";
+				$path = "C:/wamp64/www/Foodbank/TimeClock/";
 				$str = $path . $date . ".xml";
 				$myfile = fopen($str, "r") or die("Unable to open file!");
 				
@@ -101,32 +101,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 						{
 							$line = fgets($reading);
 							if (stristr($line,'<id>'))
-									{
-										$strParse = "";
-										for($p = 0; $p < strlen($line); $p++)
-										{
-											if(is_numeric($line[$p]))
-											{
-												$strParse .= $line[$p];
-											}
-											else if($line[$p] == '-')
-											{
-												$strParse .= $line[$p];
-											}
-										}
-										$newStr = $content['id'];
-										if((int)$newStr == (int)$strParse)
-										{
-											$foundEntry = true;
-										}
-										else
-										{
-											$foundEntry = false;
-										}
-									}
+							{
+								$newStr = "<id>". $content['id'] ."</id>";
+								if(strcmp($line, $newStr) == 2)
+								{
+									$foundEntry = true;
+								}
+								else
+								{
+									$foundEntry = false;
+								}
+							}
 							if(stristr($line,'<clockIn>') && $foundEntry == true)
 							{
-								$lineDB = substr($line, -19, 8);
+								$lineDB = substr($line, -20, 8);
 							}		
 						}
 							$sql = "select volunteer_id, volunteer_fname, volunteer_lname from volunteer where volunteer_id='". $content['id'] . "'";
@@ -165,17 +153,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 				"fri"=> date('y-m-d', strtotime('Friday this week')),			
 				"sat"=> date('y-m-d', strtotime('Saturday this week')),
 				"sun"=> date('y-m-d', strtotime('Sunday this week')));
+
+
 				
 				$reportAppend = "";
 				
 				$reportAppend .= "<div class=" . '"calFormatVol"' . ">". $mon_value ."</div><div class=" . '"calFormatVol"' .  ">". $tue_value ."</div><div class=" . '"calFormatVol"' .  ">". $wed_value ."</div><div class=" . '"calFormatVol"' .  ">". $thu_value ."</div><div class=" . '"calFormatVol"' .  ">". $fri_value ."</div><div class=" . '"calFormatVol"' .  ">". $sat_value ."</div><div class=" . '"calFormatVol"' .  ">". $sun_value ."</div> ";
 				
-				//print_r($_POST['paramInclude']);
+				
 				
 				
 				foreach($dateArray as $currDay => $value)
 				{
-					$sql = "select volunteer_id, calendar_dept, calendar_shift from calendar_entry where calendar_date='". $value ."' AND crossed_out='0' AND calendar_dept='". $_POST['paramInclude']."'";
+					$sql = "select volunteer_id, calendar_dept, calendar_shift from calendar_entry where calendar_date='". $value ."' AND crossed_out='0'";
 					$result = $conn->query($sql);
 					
 
@@ -188,7 +178,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 						$rowJoin = $resultJoin->fetch_assoc();
 						
 						
-						$reportAppend .= "<b>" . $rowJoin['volunteer_fname'] . " " . $rowJoin['volunteer_lname'] ."</b><br>" . $row['calendar_dept'] . "<br> " . $row['calendar_shift'] .  "<hr><br>";
+						$reportAppend .= $rowJoin['volunteer_fname'] . " " . $rowJoin['volunteer_lname'] ."<br>" . $row['calendar_dept'] . "<br> " . $row['calendar_shift'] .  "<hr><br>";
 					} 
 					
 					$reportAppend .= "</div>";
@@ -212,7 +202,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 						{
 							while($row = $result->fetch_assoc())
 							{
-								$reportAppend .= "Date: " . $row['clock_day_worked'] . ", Hours worked on shift: " .  $row['clock_hours_worked'] . ",  Notes: " . htmlspecialchars(mysqli_real_escape_string($conn,$row['Notes'])). "<br>";
+								$reportAppend .= "Date: " . $row['clock_day_worked'] . ", Hours worked on shift: " .  $row['clock_hours_worked'] . ",  Notes: " . $row['Notes']. "<br>";
 								$test += strtotime($row['clock_hours_worked']) - $calc;
 							}
 						}
@@ -247,7 +237,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 								{
 									while($row = $result->fetch_assoc())
 									{
-										$reportAppend .= "Date: " . $row['clock_day_worked'] . ", Hours worked on shift: " .  $row['clock_hours_worked'] . ",  Notes: " . htmlspecialchars(mysqli_real_escape_string($conn,$row['Notes'])). "<br>";
+										$reportAppend .= "Date: " . $row['clock_day_worked'] . ", Hours worked on shift: " .  $row['clock_hours_worked'] . ",  Notes: " . $row['Notes']. "<br>";
 										$test += strtotime($row['clock_hours_worked']) - $calc;
 									}
 								}
@@ -818,28 +808,7 @@ function populateList(str) {
 		});	
 	</script>
 
-	<script>
-	 function PrintElem(elem)
-    {
-        Popup(document.getElementById(elem).innerHTML);
-    }
-
-    function Popup(data)
-    {
-        var mywindow = window.open('', 'Report');
-        mywindow.document.write('<html><head><style>.calFormatVol{border: solid;border-color: white;width: 13%;text-align: left;float: left;}</style><title>Report</title>');
-        /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
-        mywindow.document.write('</head><body >');
-        mywindow.document.write(data);
-        mywindow.document.write('</body></html>');
-
-        mywindow.print();
-        mywindow.close();
-
-        return true;
-    }
-    
-</script>
+	
 	
 	
 <html>
@@ -847,8 +816,6 @@ function populateList(str) {
 		<title>Reports</title>
 		<link rel="stylesheet" type="text/css" href="/Foodbank/css/stylesheet.css">
 		<link rel="stylesheet" type="text/css" href="reports.css">
-		<!--<script src="/Foodbank/Volunteer/javascript/print.js"></script> -->
-		
 	</head>
 	
 	<body class="wrapper">
@@ -889,7 +856,6 @@ function populateList(str) {
 					<option value="report8">Mailing List</option> <!-- display all the emails under similar params as report 1-->
 				</select>
 				<input type="Submit" value="Generate Report">
-				<button type="button" onClick="PrintElem('reportsFrame')" >Print</button>
 			
 		</div>
 		

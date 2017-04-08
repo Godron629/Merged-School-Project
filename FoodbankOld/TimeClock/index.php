@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	if(checkPassword($_POST['user']) || $_POST['pass'] === 'admin@123') {
 		$time = date("H:i:s");
 		$date = date("Y-m-d");
-		$str = "C:/wamp64/www/Foodbank/TimeClock/Schedule_day/" . $date . ".xml";
+		$str = $date . ".xml";
 		
 		$servername = "localhost";
 		$username = "root";
@@ -78,8 +78,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 fwrite($myfile, $txt);
 fclose($myfile);
 		}
+
+
 		$myfile = fopen($str, "r+") or die("Unable to open file!");
-			$txt ="<entry>
+			$txt =
+"<entry>
 <id>". $user['volunteer_id'] ."</id>
 <name>". $user['volunteer_fname'] . " " . $user['volunteer_lname'] . "</name>
 <clockIn>". $time ."</clockIn>
@@ -107,7 +110,7 @@ fclose($myfile);
 								$('#clockedInDialog').dialog('open');
 								});
 						</script>";
-				fseek($myfile, -13, SEEK_END);
+				fseek($myfile, -12, SEEK_END);
 				fwrite($myfile, $txt);
 			}
 			$counter = 0;
@@ -151,7 +154,7 @@ fclose($myfile);
 								if($content['clockOut'] == null)
 								{
 									$reading = fopen($str, 'r');
-									$writing = fopen("C:/wamp64/www/Foodbank/TimeClock/Schedule_day/test.xml", 'w');
+									$writing = fopen("test.xml", 'w');
 									while (!feof($reading))
 									{
 										$line = fgets($reading);
@@ -170,6 +173,7 @@ fclose($myfile);
 											}
 										}
 										$newStr = $_POST['user'];
+										
 										if((int)$newStr == (int)$strParse)
 										{
 											$count2++;
@@ -214,12 +218,12 @@ fclose($myfile);
 											
 										}
 										fputs($writing, $line);
-										file_put_contents($str, file_get_contents("C:/wamp64/www/Foodbank/TimeClock/Schedule_day/test.xml"));
+										file_put_contents($str, file_get_contents("test.xml"));
 										$counter = 1;
 									}
 								fclose($reading); 
 								fclose($writing);
-								unlink("C:/wamp64/www/Foodbank/TimeClock/Schedule_day/test.xml");
+								unlink("test.xml");
 								}
 								else
 								{

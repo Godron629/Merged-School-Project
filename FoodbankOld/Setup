@@ -1,0 +1,10 @@
+Setup 
+
+1. Install WAMP server 
+2. Change WAMP port to 8080 instead of 80 
+3. Put Foodbank directory inside of wamp64/www/
+4. Start phpMyAdmin  
+	root, blank password 
+5. Create Foodbank database 
+6. Import database backup
+7. Make sure that 1 Admin Account exists 
