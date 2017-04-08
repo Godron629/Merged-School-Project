@@ -19,7 +19,7 @@ function changeMonth(month, buttonName) {
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
 				
-				location.href = 'http://localhost:8080/Foodbank/Calendar/newEntry.php';
+				location.href = '/Foodbank/Calendar/newEntry.php';
                 
             }
         };
@@ -125,7 +125,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 		$_SESSION['calDept'] = null;
 		$_SESSION['currMonth'] = null;
-		header('Location: http://localhost:8080/Foodbank/Calendar/'); //send back to calendar without updating
+		header('Location: /Foodbank/Calendar/'); //send back to calendar without updating
 	}
 	else
 	{
@@ -156,7 +156,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 			$conn->close();
 			$_SESSION['calDept'] = null;
 			$_SESSION['currMonth'] = null;
-			header('Location: http://localhost:8080/Foodbank/Calendar/');
+			header('Location: /Foodbank/Calendar/');
 		}
 		else
 		{

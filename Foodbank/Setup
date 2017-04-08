@@ -3,6 +3,8 @@ Setup
 1. Install WAMP server 
 2. Change WAMP port to 8080 instead of 80 
 3. Put Foodbank directory inside of wamp64/www/
+	3.1 Point to /Foodbank/login.php as /Foodbank in Apache
+	3.2 Create new directory in apache.conf block with full access to /Foodbank
 4. Start phpMyAdmin  
 	root, blank password 
 5. Create Foodbank database 

@@ -10,7 +10,7 @@ function delEntry(recordID)
 	{
         if (this.readyState == 4 && this.status == 200) 
 		{
-            location.href = 'http://localhost:8080/Foodbank/Calendar/';
+            location.href = '/Foodbank/Calendar/';
         }
     };
 	xmlhttp.open("GET", "delEntry.php?q=" + recordID, true);
@@ -26,7 +26,7 @@ function crossEntry(recordID)
 	{
 		if (this.readyState == 4 && this.status == 200) 
 		{
-			location.href = 'http://localhost:8080/Foodbank/Calendar/';     
+			location.href = '/Foodbank/Calendar/';     
         }
     };
 	xmlhttp.open("GET", "crossEntry.php?q=" + recordID, true);
@@ -42,7 +42,7 @@ function changeMonth(month, buttonName)
 	{
         if (this.readyState == 4 && this.status == 200)
 		{
-			location.href = 'http://localhost:8080/Foodbank/Calendar/';
+			location.href = '/Foodbank/Calendar/';
         }
     };
 	xmlhttp.open("GET", "changeMonth.php?q=" + month + "&btn=" + buttonName, true);
@@ -58,7 +58,7 @@ function changeCal(buttonName)
 	{
         if (this.readyState == 4 && this.status == 200)
 		{
-			location.href = 'http://localhost:8080/Foodbank/Calendar/';
+			location.href = '/Foodbank/Calendar/';
                 
         }
     };
@@ -109,7 +109,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	//print_r($_SESSION);
 	$_SESSION['calDept'] = null;
 	$_SESSION['currMonth'] = null;
-	header('Location: http://localhost:8080/Foodbank/Calendar/newEntry.php');
+	header('Location: /Foodbank/Calendar/newEntry.php');
 }
 //Default calendar department
 if(!isset($_SESSION['calDept']))
@@ -277,7 +277,7 @@ for($j = 0; $j < 6; $j++) //each row
 									echo "<center>Morning</center>";
 									$firstOcc = false;
 								}
-								echo "<div class='div2' id='{$calendarEntryIDs[$index]}'><button style='padding: 0px 0px 0px 0px; margin: 0px 0px 0px 5px;'onclick='delEntry({$calendarEntryIDs[$index]})'>X</button><button style='padding: 0px 0px 0px 0px; margin: 0px 5px 0px 0px;' onclick='crossEntry({$calendarEntryIDs[$index]})'><strike>abc</strike></button><a href='http://localhost:8080/Foodbank/Calendar/updateEntry.php?id={$calendarEntryIDs[$index]}'"; if($cross_out[$index] == 1){echo" style='text-decoration: line-through';";} echo">{$calendarFName[$index]} {$calendarLName[$index]} : {$calendarVolIDs[$index]}</a></div>";
+								echo "<div class='div2' id='{$calendarEntryIDs[$index]}'><button style='padding: 0px 0px 0px 0px; margin: 0px 0px 0px 5px;'onclick='delEntry({$calendarEntryIDs[$index]})'>X</button><button style='padding: 0px 0px 0px 0px; margin: 0px 5px 0px 0px;' onclick='crossEntry({$calendarEntryIDs[$index]})'><strike>abc</strike></button><a href='/Foodbank/Calendar/updateEntry.php?id={$calendarEntryIDs[$index]}'"; if($cross_out[$index] == 1){echo" style='text-decoration: line-through';";} echo">{$calendarFName[$index]} {$calendarLName[$index]} : {$calendarVolIDs[$index]}</a></div>";
 								$k++;
 							}
 						}
@@ -293,7 +293,7 @@ for($j = 0; $j < 6; $j++) //each row
 									echo "<hr><center>Afternoon</center>";
 									$firstOcc = false;
 								};
-								echo "<div class='div2' id='{$calendarEntryIDs[$index]}'><button style='padding: 0px 0px 0px 0px; margin: 0px 0px 0px 5px;'onclick='delEntry({$calendarEntryIDs[$index]})'>X</button><button style='padding: 0px 0px 0px 0px; margin: 0px 5px 0px 0px;' onclick='crossEntry({$calendarEntryIDs[$index]})'><strike>abc</strike></button><a href='http://localhost:8080/Foodbank/Calendar/updateEntry.php?id={$calendarEntryIDs[$index]}'"; if($cross_out[$index] == 1){echo" style='text-decoration: line-through';";} echo">{$calendarFName[$index]} {$calendarLName[$index]} : {$calendarVolIDs[$index]}</a></div>";
+								echo "<div class='div2' id='{$calendarEntryIDs[$index]}'><button style='padding: 0px 0px 0px 0px; margin: 0px 0px 0px 5px;'onclick='delEntry({$calendarEntryIDs[$index]})'>X</button><button style='padding: 0px 0px 0px 0px; margin: 0px 5px 0px 0px;' onclick='crossEntry({$calendarEntryIDs[$index]})'><strike>abc</strike></button><a href='/Foodbank/Calendar/updateEntry.php?id={$calendarEntryIDs[$index]}'"; if($cross_out[$index] == 1){echo" style='text-decoration: line-through';";} echo">{$calendarFName[$index]} {$calendarLName[$index]} : {$calendarVolIDs[$index]}</a></div>";
 								$o++;
 							}
 						}

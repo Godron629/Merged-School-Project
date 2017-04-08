@@ -282,7 +282,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	//check if the post was the back button
 	if(isset($_POST['Back']))
 	{
-		echo "<script>location.href = 'http://localhost:8080/Foodbank/Calendar/';</script>"; //send back to calendar without updating
+		echo "<script>location.href = '/Foodbank/Calendar/';</script>"; //send back to calendar without updating
 	}
 	else
 	{
@@ -346,7 +346,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 		{
 			$sql = "UPDATE calendar_entry SET volunteer_id=".$person[0].", calendar_date='".$newDay."', calendar_dept='".$newDept."', calendar_shift='".$newShift."' WHERE calendar_entry_id=".$row['calendar_entry_id'];
 			$conn->query($sql);
-			echo "<script>location.href = 'http://localhost:8080/Foodbank/Calendar/';</script>"; //send back to calendar after update
+			echo "<script>location.href = '/Foodbank/Calendar/';</script>"; //send back to calendar after update
 		}
 	} 
 }
