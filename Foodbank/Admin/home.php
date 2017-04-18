@@ -81,7 +81,7 @@ if($result = db_select($sql)) {
 			</li>
 			<li><a href="/Foodbank/Reports/reports.php">Reports</a></li>			
 			<li><a href="/Foodbank/Timeclock/index.php">Volunteer Timeclock</a></li>			
-			<li><a href="#">Help</a></li>
+			<li><a href="mailto:brayden.sipko@lethbridgecollege.ca">Help</a></li>
 		</ul>
 
 		<small>Kodiak Softworks 2017</small>
