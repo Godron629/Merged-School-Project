@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"dayNumb",
+				"dayNumbers"
+			],
+			[
+				"dayNumbers",
+				"dayNumbersOfWeek"
+			],
+			[
+				"days",
+				"daysArray"
+			],
+			[
 				"create",
 				"createBackupButton"
 			],
@@ -164,28 +176,10 @@
 	"buffers":
 	[
 		{
-			"file": "Changes",
-			"settings":
-			{
-				"buffer_size": 140,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "Reports/reports.php",
 			"settings":
 			{
-				"buffer_size": 32206,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Testing/test.php",
-			"settings":
-			{
-				"buffer_size": 631,
+				"buffer_size": 31839,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -215,9 +209,17 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "stop",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"rest",
+				"Xdebug: Restart Session"
+			],
+			[
+				"start",
+				"Xdebug: Start Debugging (Launch Browser)"
+			],
 			[
 				"stop",
 				"Xdebug: Stop Debugging (Close Windows)"
@@ -228,14 +230,6 @@
 			],
 			[
 				"restart",
-				"Xdebug: Restart Session"
-			],
-			[
-				"start",
-				"Xdebug: Start Debugging"
-			],
-			[
-				"rest",
 				"Xdebug: Restart Session"
 			],
 			[
@@ -277,15 +271,30 @@
 	[
 		"/C/wamp64/www/Foodbank",
 		"/C/wamp64/www/Foodbank/Admin",
-		"/C/wamp64/www/Foodbank/code/php",
+		"/C/wamp64/www/Foodbank/css",
+		"/C/wamp64/www/Foodbank/images",
 		"/C/wamp64/www/Foodbank/Reports",
-		"/C/wamp64/www/Foodbank/Testing"
+		"/C/wamp64/www/Foodbank/Testing",
+		"/C/wamp64/www/Foodbank/TimeClock",
+		"/C/wamp64/www/Foodbank/Volunteer"
 	],
 	"file_history":
 	[
+		"/C/wamp64/www/Foodbank/Testing/test.php",
+		"/C/wamp64/www/Foodbank/css/stylesheet.css",
+		"/C/wamp64/www/Foodbank/Calendar/stylesheet.css",
+		"/C/wamp64/www/Foodbank/Reports/stylesheet.css",
+		"/C/wamp64/www/Foodbank/Reports/reports.php",
+		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf",
+		"/C/wamp64/www/Foodbank/Calendar/newEntry.php",
+		"/C/wamp64/www/Foodbank/TimeClock/Schedule_day/autoClockOutScript.php",
+		"/C/wamp64/www/Foodbank/Changes",
+		"/C/wamp64/www/Foodbank/Setup",
+		"/C/wamp64/www/Foodbank/Calendar/updateEntry.php",
+		"/C/wamp64/www/Foodbank/Calendar/index.php",
+		"/C/wamp64/logs/access.log",
 		"/C/wamp64/www/Foodbank/Reports/ReportParameters.php",
 		"/C/wamp64/www/Foodbank/login.php",
-		"/C/wamp64/www/Foodbank/css/stylesheet.css",
 		"/C/wamp64/www/Foodbank/Admin/addUser.php",
 		"/C/wamp64/www/Foodbank/TimeClock/index.php",
 		"/C/wamp64/www/Foodbank/TimeClock/clockEverybodyOutScript.php",
@@ -295,16 +304,10 @@
 		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackup.php",
 		"/C/wamp64/www/Foodbank/databaseBackup/createBackup.php",
 		"/C/wamp64/bin/apache/apache2.4.23/bin/php.ini",
-		"/C/wamp64/bin/apache/apache2.4.23/conf/httpd.conf",
 		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackupFunctions.php",
 		"/C/wamp64/www/Foodbank/databaseBackup/databaseBackup.js",
 		"/C/wamp64/www/Foodbank/code/php/databaseFunctions.php",
-		"/C/wamp64/www/Foodbank/Changes",
-		"/C/wamp64/www/Foodbank/Calendar/newEntry.php",
-		"/C/wamp64/www/Foodbank/Calendar/updateEntry.php",
-		"/C/wamp64/www/Foodbank/Calendar/index.php",
 		"/C/wamp64/www/Foodbank/Calendar/test.html",
-		"/C/wamp64/www/Foodbank/Reports/reports.php",
 		"/C/wamp64/www/Foodbank/Volunteer/UpdateVolunteerTime.php",
 		"/C/wamp64/www/Foodbank/Volunteer/newVolunteer.php",
 		"/C/wamp64/www/Foodbank/Volunteer/updateVolunteer.php",
@@ -319,7 +322,6 @@
 		"/C/wamp64/www/Foodbank/code/javascript/updateVolunteer.js",
 		"/C/wamp64/www/Foodbank/code/javascript/newVolunteer.js",
 		"/C/wamp64/www/Foodbank/project.sublime-project",
-		"/C/wamp64/www/Foodbank/Testing/test.php",
 		"/C/wamp64/www/Foodbank/Volunteer/New Volunteer/newVolunteer.php",
 		"/C/wamp64/www/Foodbank/code/php/selectPopulate.php",
 		"/C/wamp64/www/Foodbank/Calendar/createNewVolunteer.php",
@@ -387,7 +389,7 @@
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -402,6 +404,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"?>",
+			"report2",
+			"nig",
+			"shit",
+			"fuck",
+			"comic sans",
+			"localhost",
+			"Direc",
 			"tooLazy",
 			"toolazy",
 			"loginLogo",
@@ -493,53 +503,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Changes",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 140,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								140,
-								140
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "Reports/reports.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 32206,
+						"buffer_size": 31839,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6665,
-								6665
+								25737,
+								25737
 							]
 						],
 						"settings":
@@ -548,38 +529,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3663.0,
+						"translation.y": 4020.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Testing/test.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 631,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6,
-								6
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -587,7 +540,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 30.0
 	},
 	"input":
 	{
@@ -632,7 +585,7 @@
 	"project": "project.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 56.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -670,15 +623,10 @@
 			"hide_conflict": false,
 			"restore_index":
 			{
-				"19":
+				"17":
 				{
 					"group": 0,
 					"index": 0
-				},
-				"43":
-				{
-					"group": 0,
-					"index": 1
 				}
 			},
 			"restore_layout":
@@ -709,7 +657,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 119.0,
+	"side_bar_width": 190.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

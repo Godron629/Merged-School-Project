@@ -1,0 +1,31 @@
+<timeclock>
+
+<entry>
+<id>-1</id>
+<name>-1</name>
+<clockIn>-1</clockIn>
+<clockOut>-1</clockOut>
+</entry>
+
+<entry>
+<id>-2</id>
+<name>-2</name>
+<clockIn>-2</clockIn>
+<clockOut>-2</clockOut>
+</entry>
+
+<entry>
+<id>19</id>
+<name>Jane Doe </name>
+<clockIn>08:28:30</clockIn>
+<clockOut>08:28:44</clockOut>
+</entry>
+
+ <entry>
+<id>19</id>
+<name>Jane Doe </name>
+<clockIn>08:28:55</clockIn>
+<clockOut></clockOut>
+</entry>
+
+ </timeclock>

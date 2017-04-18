@@ -1,0 +1,38 @@
+<timeclock>
+
+<entry>
+<id>-1</id>
+<name>-1</name>
+<clockIn>-1</clockIn>
+<clockOut>-1</clockOut>
+</entry>
+
+<entry>
+<id>-2</id>
+<name>-2</name>
+<clockIn>-2</clockIn>
+<clockOut>-2</clockOut>
+</entry>
+
+<entry>
+<id>3</id>
+<name>Jeff  Emshey</name>
+<clockIn>13:40:08</clockIn>
+<clockOut>13:40:15</clockOut>
+</entry>
+
+<entry>
+<id>17</id>
+<name>Alexa Sipko</name>
+<clockIn>22:46:22</clockIn>
+<clockOut>22:46:31</clockOut>
+</entry>
+
+<entry>
+<id>7</id>
+<name>Mike Richter</name>
+<clockIn>22:46:40</clockIn>
+<clockOut></clockOut>
+</entry>
+
+ </timeclock>

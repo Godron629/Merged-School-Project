@@ -148,41 +148,26 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 			case "report3":
 			{
 				//single day values
-				$sun_value= date('d', strtotime('Sunday this week'));
-				$mon_value= date('d', strtotime('next Monday -1 week'));
-				$tue_value= date('d', strtotime('next Tuesday -1 week'));
-				$wed_value= date('d', strtotime('next Wednesday -1 week'));
-				$thu_value= date('d', strtotime('next Thursday -1 week'));
-				$fri_value= date('d', strtotime('next Friday -1 week'));		
-				$sat_value= date('d', strtotime('Saturday this week'));		
+				$dayNumbers = dayNumbersOfWeek();
+				$datesOfWeek = getDatesOfWeek();
 
-				if(date('D') === date('D', strtotime('Saturday this week'))) {
-					$sat_value = date('d', strtotime('Saturday this week'));
-				} else {
-					$sat_value = date('d', strtotime('next Saturday -1 week'));
-				}
+				$mon_value = $dayNumbers[0];
+				$tue_value = $dayNumbers[1];
+				$wed_value = $dayNumbers[2];
+				$thu_value = $dayNumbers[3];
+				$fri_value = $dayNumbers[4];
+				$sat_value = $dayNumbers[5];
+				$sun_value = $dayNumbers[6];	
 
-				if(date('D') === date('D', strtotime('Saturday this week'))) {
-					$dateArray = array(
-					//yy-mm-dd for database comparison
-					"mon"=> date('y-m-d', strtotime('next Monday -1 week')),
-					"tue"=> date('y-m-d', strtotime('next Tuesday -1 week')),
-					"wed"=> date('y-m-d', strtotime('next Wednesday -1 week')),
-					"thu"=> date('y-m-d', strtotime('next Thursday -1 week')),
-					"fri"=> date('y-m-d', strtotime('next Friday -1 week')),			
-					"sat"=> date('y-m-d', strtotime('Saturday this week')),
-					"sun"=> date('y-m-d', strtotime('Sunday this week')));
-				} else {
-					$dateArray = array(
-					"mon"=> date('y-m-d', strtotime('next Monday -1 week')),
-					"tue"=> date('y-m-d', strtotime('next Tuesday -1 week')),
-					"wed"=> date('y-m-d', strtotime('next Wednesday -1 week')),
-					"thu"=> date('y-m-d', strtotime('next Thursday -1 week')),
-					"fri"=> date('y-m-d', strtotime('next Friday -1 week')),			
-					"sat"=> date('y-m-d', strtotime('next Saturday -1 week')),
-					"sun"=> date('y-m-d', strtotime('Sunday this week')));
-				}
-
+				$dateArray = array(
+				//yy-mm-dd for database comparison
+				"mon"=> $datesOfWeek[0],
+				"tue"=> $datesOfWeek[1],
+				"wed"=> $datesOfWeek[2],
+				"thu"=> $datesOfWeek[3],
+				"fri"=> $datesOfWeek[4],
+				"sat"=> $datesOfWeek[5],
+				"sun"=> $datesOfWeek[6]);
 				
 				$reportAppend = "";
 				
@@ -738,7 +723,47 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	
 }
 
+function dayNumbersOfWeek() {
+	$date = date('Y/m/d');
+	$timestamp = strtotime($date);
+	$dayOfWeek = date('w', $timestamp);
 
+	$offset = $dayOfWeek - 1;
+	if ($offset < 0) {
+		$offset = 6;
+	}
+
+	$timestamp = $timestamp - ($offset * 86400);
+
+	$dayNumbers = array();
+
+	for ($i = 0; $i < 7; $i++, $timestamp += 86400){
+		$dayNumbers[$i] = date('d', $timestamp); 
+	}
+
+	return $dayNumbers;
+}
+
+function getDatesOfWeek() {
+	$date = date('Y/m/d');
+	$timestamp = strtotime($date);
+	$dayOfWeek = date('w', $timestamp);
+
+	$offset = $dayOfWeek - 1;
+	if ($offset < 0) {
+		$offset = 6;
+	}
+
+	$timestamp = $timestamp - ($offset * 86400);
+
+	$dateArray = array();
+
+	for ($i = 0; $i < 7; $i++, $timestamp += 86400){
+		$dateArray[$i] = date('y-m-d', $timestamp); 
+	}
+
+	return $dateArray;
+}
 
 ?>
 <script>

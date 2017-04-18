@@ -1,0 +1,24 @@
+<timeclock>
+
+<entry>
+<id>-1</id>
+<name>-1</name>
+<clockIn>-1</clockIn>
+<clockOut>-1</clockOut>
+</entry>
+
+<entry>
+<id>-2</id>
+<name>-2</name>
+<clockIn>-2</clockIn>
+<clockOut>-2</clockOut>
+</entry>
+
+<entry>
+<id>1</id>
+<name>Gideon Richter</name>
+<clockIn>15:10:38</clockIn>
+<clockOut>15:10:47</clockOut>
+</entry>
+
+ </timeclock>
